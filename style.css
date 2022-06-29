@@ -1,5 +1,5 @@
 body {
-  margin: 0;
+  margin: 0;  
 }
 
 header {
@@ -7,12 +7,12 @@ header {
   font-size: 18px;
   display: flex;
   flex-direction: row;
-  background-color: #3C3A39;
+  background-color: #3c3a39;
 }
 
 header .title {
   font-weight: 700;
-  color: #FFFFFF;
+  color: #ffffff;
   margin: 19px auto 19px 24px;
 }
 
@@ -23,19 +23,19 @@ header .title {
 .hamburguer-button .bar {
   width: 16px;
   height: 3px;
-  background-color: #FFFFFF;
-  ;
+  background-color: #ffffff;
   margin: 3px 0;
   border-radius: 10px;
 }
 
 .headline {
-  padding-left: 25px;
-  padding-top: 100px;
-  padding-right: 25px;
+  background-image: url(media/Illustration.svg);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  padding: 100px 25px 35px;
   display: flex;
   flex-direction: column;
-  background-color: #1C1A19;
+  background-color: #1c1a19;
 }
 
 .headline h1 {
@@ -43,13 +43,13 @@ header .title {
   font-weight: 400;
   line-height: 64px;
   font-family: serif;
-  color: #FF6B00;
-  margin: 0px auto auto 0px;
+  color: #ff6b00;
+  margin: 0 auto auto 0;
 }
 
 .headline .title {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  color: #FFF5E1;
+  color: #fff5e1;
   line-height: 32px;
   margin: 10px 0;
 }
@@ -58,13 +58,13 @@ header .title {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-weight: 400;
   font-size: 16px;
-  line-height: 20px;
-  color: #FFFFFF;
+  line-height: 22px;
+  color: #ffffff;
 }
 
 .headline .social-icons {
   display: flex;
-  fill: #FFF5E1;
+  fill: #fff5e1;
   gap: 20px;
   padding-top: 20px;
   padding-bottom: 130px;
