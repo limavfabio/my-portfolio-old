@@ -1,5 +1,5 @@
 body {
-  margin: 0;  
+  margin: 0;
 }
 
 header {
@@ -12,7 +12,7 @@ header {
 
 header .title {
   font-weight: 700;
-  color: #ffffff;
+  color: #fff;
   margin: 19px auto 19px 24px;
 }
 
@@ -23,7 +23,7 @@ header .title {
 .hamburguer-button .bar {
   width: 16px;
   height: 3px;
-  background-color: #ffffff;
+  background-color: #fff;
   margin: 3px 0;
   border-radius: 10px;
 }
@@ -59,7 +59,7 @@ header .title {
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
-  color: #ffffff;
+  color: #fff;
 }
 
 .headline .social-icons {
