@@ -2,7 +2,8 @@
 
 # My-Portfolio
 
-> a simple portfolio project written as a website.
+> a simple portfolio project written as a website for learning purposes for the Microverse Program.
+
 
 
 ## Built With
@@ -12,7 +13,9 @@
 
 ## Getting Started
 
-Just open it
+Clone repo https://github.com/limavfabio/My-Portfolio
+
+cd initialDesign
 
 ### Prerequisites
 
