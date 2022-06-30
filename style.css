@@ -255,7 +255,7 @@ header .title {
   padding-bottom: 100px;
 }
 
-.skills-section .title {
+.skills-section .title-languages {
   font-family: Inter;
   font-size: 32px;
   font-weight: 600;
@@ -266,6 +266,19 @@ header .title {
   white-space: pre;
   padding-bottom: 20px;
   padding-top: 120px;
+}
+
+.skills-section .title {
+  font-family: Inter;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 44px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #fff;
+  white-space: pre;
+  padding-bottom: 20px;
+  padding-top: 20px;
 }
 
 .skills-section .skills {
