@@ -73,17 +73,54 @@ header .title {
 
 .recent-works {
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(3,fr);
+  justify-content: center;
+  margin: auto 24px;
 }
 
 .recent-works .title {
-  
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .recent-works .title .text {
-  
+  margin-bottom: 15px;
   font-family: Crete Round;
   font-weight: 400;
   font-size: 40px;
+}
+
+.recent-works .img-card-1 {
+
+}
+
+.recent-works .img-card-1 .project-title {
+  font-family: Crete Round;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 44px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.recent-works .img-card-1 .description {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.recent-works .img-card-1 .buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.recent-works .img-card-1 .simple-button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 12px;
+  border: #8993A4 solid 1px;
 }
