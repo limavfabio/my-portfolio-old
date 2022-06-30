@@ -71,13 +71,13 @@ header .title {
 }
 
 .recent-works {
+  padding-top: 120px;
   display: grid;
   justify-content: center;
   margin: auto 24px;
 }
 
 .recent-works .title {
-  margin-top: 50px;
   margin-bottom: 50px;
 }
 
@@ -86,10 +86,11 @@ header .title {
   font-family: 'Crete Round', serif;
   font-weight: 400;
   font-size: 40px;
+  color: #1C1a19;
 }
 
 .recent-works .img-card-1 {
-
+  color: #091e42;
 }
 
 .recent-works .img-card-1 .project-title {
@@ -99,6 +100,7 @@ header .title {
   line-height: 44px;
   letter-spacing: 0em;
   text-align: left;
+  margin: 10px auto ;
 }
 
 .recent-works .img-card-1 .description {
@@ -108,6 +110,7 @@ header .title {
   line-height: 22px;
   letter-spacing: 0em;
   text-align: left;
+  margin-bottom: 10px;
 }
 
 .recent-works .img-card-1 .buttons {
@@ -130,9 +133,6 @@ header .title {
 }
 
 .recent-works .img-card-1 .project-button{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
   padding: 12px 12px;
   background-color: #ff6b00;
   font-family: 'Inter', sans-serif;
@@ -140,6 +140,57 @@ header .title {
   font-weight: 700;
   line-height: 24px;
   letter-spacing: 0.03em;
-  text-align: center;
+  color: #fff;
+}
+
+.recent-works .background-card-1 {
+  background-image: url(media/background-card-2);
+}
+
+.recent-works .background-card-1 .project-title {
+  font-family: Crete Round;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 44px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #fff;
+}
+
+.recent-works .background-card-1 .description {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+}
+
+.recent-works .background-card-1 .buttons {
+  display: flex;
+  gap: 12px;
+}
+
+.recent-works .background-card-1 .simple-button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 12px;
+  background: rgba(255, 255, 255, 0.24);
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.recent-works .background-card-1 .project-button {
+  padding: 12px 12px;
+  background-color: #ff6b00;
+  font-family: 'Inter', sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.03em;
   color: #fff;
 }
