@@ -1,3 +1,9 @@
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
 body {
   margin: 0;
 }
@@ -193,4 +199,78 @@ header .title {
   line-height: 24px;
   letter-spacing: 0.03em;
   color: #fff;
+}
+
+.about-me {
+  background-color: #1c1a19;
+  margin-top: 120px;
+  background-image: url(media/illustration-about-me-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+
+.about-me .title {
+  font-family: 'Crete Round';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 72px;
+  color: #FF6B00;
+  padding-top: 120px;
+  margin: auto 24px;
+}
+
+.about-me .description {
+  font-family: Inter;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: left;
+  color: #fff;
+  margin: 12px 24px 24px;
+}
+
+.about-me .button {
+  padding: 12px 12px;
+  background-color: #ff6b00;
+  font-family: 'Inter', sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #fff;
+  margin: auto 24px 180px;
+  width: fit-content;
+}
+
+
+
+
+.skills-section {
+  background-color: #1c1a19;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 100px;
+}
+
+.skills-section .title {
+  font-family: Inter;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 44px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #fff;
+  white-space: pre;
+  padding-bottom: 20px;
+}
+
+.skills-section .skills {
+  font-family: Inter;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 43px;
+  text-align: center;
+  color: #fff;
+  line-height: 55px;
+  padding-bottom: 20px;
 }
