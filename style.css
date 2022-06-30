@@ -202,6 +202,8 @@ header .title {
 }
 
 .about-me {
+  display: flex;
+  flex-direction: column;
   background-color: #1c1a19;
   margin-top: 120px;
   background-image: url(media/illustration-about-me-mobile.svg);
@@ -241,8 +243,9 @@ header .title {
   width: fit-content;
 }
 
-
-
+.about-me .underline {
+  align-self: center;
+}
 
 .skills-section {
   background-color: #1c1a19;
@@ -262,6 +265,7 @@ header .title {
   color: #fff;
   white-space: pre;
   padding-bottom: 20px;
+  padding-top: 120px;
 }
 
 .skills-section .skills {
