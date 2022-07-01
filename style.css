@@ -1,3 +1,13 @@
+button {
+  all: unset;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
 body {
   margin: 0;
 }
@@ -39,16 +49,16 @@ header .title {
 }
 
 .headline h1 {
+  font-family: 'Crete Round', serif;
   font-size: 56px;
   font-weight: 400;
   line-height: 64px;
-  font-family: serif;
   color: #ff6b00;
   margin: 0 auto auto 0;
 }
 
 .headline .title {
-  font-family: 'Crete Round', serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   color: #fff5e1;
   line-height: 32px;
   margin: 10px 0;
@@ -68,4 +78,259 @@ header .title {
   gap: 20px;
   padding-top: 20px;
   padding-bottom: 130px;
+}
+
+.recent-works {
+  padding-top: 120px;
+  display: grid;
+  justify-content: center;
+  margin: auto 24px;
+}
+
+.top {
+  margin-bottom: 50px;
+}
+
+.top .title {
+  margin-bottom: 15px;
+  font-family: 'Crete Round', serif;
+  font-weight: 400;
+  font-size: 40px;
+  color: #1c1a19;
+}
+
+.recent-works .img-card-1 {
+  color: #091e42;
+}
+
+.recent-works .img-card-1 .project-title {
+  font-family: 'Crete Round', serif;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 44px;
+  text-align: left;
+  margin: 10px auto;
+}
+
+.about-me .description {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: left;
+  color: #fff;
+  margin: 12px 24px 24px;
+}
+
+.recent-works .img-card-1 .description {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.recent-works .img-card-1 .buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.recent-works .img-card-1 .simple-button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 12px;
+  border: #8993a4 solid 1px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.recent-works .img-card-1 .project-button {
+  padding: 12px 12px;
+  background-color: #ff6b00;
+  font-family: 'Inter', sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #fff;
+  margin-top: 12px;
+  border: 1px solid #ff6b00;
+}
+
+.recent-works .background-card-1 .project-button {
+  padding: 12px 12px;
+  background-color: #ff6b00;
+  font-family: 'Inter', sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #fff;
+  border: 1px solid #ff6b00;
+}
+
+.recent-works .img-card-1 .project-button:hover {
+  padding: 12px 12px;
+  font-family: 'Inter', sans-serif;
+  background-color: #fff5e1;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #f55800;
+  margin-top: 12px;
+  border: 1px solid #f55800;
+}
+
+.recent-works .background-card-1 {
+  background-image: url(media/background-card-2);
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.recent-works .background-card-1 .project-title {
+  font-family: 'Crete Round', serif;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 44px;
+  text-align: left;
+  color: #fff;
+  margin: 60px 16px 20px;
+}
+
+.recent-works .background-card-1 .description {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+  margin: 10px 16px 20px;
+}
+
+.recent-works .background-card-1 .buttons {
+  display: flex;
+  gap: 12px;
+  margin: 10px auto 20px 16px;
+  color: #fff;
+}
+
+.recent-works .background-card-1 .simple-button {
+  padding: 10px 12px;
+  background: rgba(255, 255, 255, 0.24);
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.recent-works .background-card-1 .project-button:hover {
+  padding: 12px 12px;
+  background-color: #fff5e1;
+  font-family: 'Inter', sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #f55800;
+  border: 1px solid #ff6b00;
+}
+
+.about-me {
+  display: flex;
+  flex-direction: column;
+  background-color: #1c1a19;
+  margin-top: 120px;
+  background-image: url(media/illustration-about-me-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+
+.about-me .title {
+  font-family: 'Crete Round', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 72px;
+  color: #ff6b00;
+  padding-top: 120px;
+  margin: auto 24px;
+}
+
+.about-me .button {
+  padding: 12px 12px;
+  background-color: #ff6b00;
+  font-family: 'Inter', sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #fff;
+  margin: auto 24px 180px;
+  width: fit-content;
+  border: 1px #ff6b00 solid;
+}
+
+.about-me .button:hover {
+  padding: 12px 12px;
+  background-color: #fff5e1;
+  font-family: 'Inter', sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #ff6b00;
+  margin: auto 24px 180px;
+  width: fit-content;
+  border: 1px #ff6b00 solid;
+}
+
+.about-me .underline {
+  align-self: center;
+}
+
+.skills-section {
+  background-color: #1c1a19;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 100px;
+}
+
+.skills-section .title-languages {
+  font-family: 'Inter', sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 44px;
+  text-align: left;
+  color: #fff;
+  white-space: pre;
+  padding-bottom: 20px;
+  padding-top: 120px;
+}
+
+.skills-section .title {
+  font-family: 'Inter', sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 44px;
+  text-align: left;
+  color: #fff;
+  white-space: pre;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.skills-section .skills {
+  font-family: 'Inter', sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  text-align: center;
+  color: #fff;
+  line-height: 55px;
+  padding-bottom: 20px;
 }
