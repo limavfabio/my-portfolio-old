@@ -87,11 +87,11 @@ header .title {
   margin: auto 24px;
 }
 
-.recent-works .title {
+.recent-works .top {
   margin-bottom: 50px;
 }
 
-.recent-works .title .text {
+.recent-works .top .title {
   margin-bottom: 15px;
   font-family: 'Crete Round', serif;
   font-weight: 400;
