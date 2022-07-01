@@ -162,6 +162,18 @@ header .title {
   border: 1px solid #ff6b00;
 }
 
+.recent-works .background-card-1 .project-button {
+  padding: 12px 12px;
+  background-color: #ff6b00;
+  font-family: 'Inter', sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #fff;
+  border: 1px solid #ff6b00;
+}
+
 .recent-works .img-card-1 .project-button:hover {
   padding: 12px 12px;
   font-family: 'Inter', sans-serif;
@@ -217,18 +229,6 @@ header .title {
   font-size: 15px;
 }
 
-.recent-works .background-card-1 .project-button {
-  padding: 12px 12px;
-  background-color: #ff6b00;
-  font-family: 'Inter', sans-serif;
-  font-size: 17px;
-  font-weight: 700;
-  line-height: 24px;
-  letter-spacing: 0.03em;
-  color: #fff;
-  border: 1px solid #ff6b00;
-}
-
 .recent-works .background-card-1 .project-button:hover {
   padding: 12px 12px;
   background-color: #fff5e1;
@@ -272,7 +272,7 @@ header .title {
   color: #fff;
   margin: auto 24px 180px;
   width: fit-content;
-  border:  1px #ff6b00 solid;
+  border: 1px #ff6b00 solid;
 }
 
 .about-me .button:hover {
@@ -286,7 +286,7 @@ header .title {
   color: #ff6b00;
   margin: auto 24px 180px;
   width: fit-content;
-  border:  1px #ff6b00 solid;
+  border: 1px #ff6b00 solid;
 }
 
 .about-me .underline {
