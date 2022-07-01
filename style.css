@@ -1,3 +1,7 @@
+button {
+  all: unset;
+}
+
 ul {
   list-style: none;
   padding: 0;
@@ -154,11 +158,28 @@ header .title {
   line-height: 24px;
   letter-spacing: 0.03em;
   color: #fff;
+  margin-top: 12px;
+  border: 1px solid #ff6b00;
+}
+
+.recent-works .img-card-1 .project-button:hover {
+  padding: 12px 12px;
+  font-family: 'Inter', sans-serif;
+  background-color: #fff5e1;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #f55800;
+  margin-top: 12px;
+  border: 1px solid #f55800;
 }
 
 .recent-works .background-card-1 {
   background-image: url(media/background-card-2);
   margin-top: 24px;
+  display: flex;
+  flex-direction: column;
 }
 
 .recent-works .background-card-1 .project-title {
@@ -205,6 +226,19 @@ header .title {
   line-height: 24px;
   letter-spacing: 0.03em;
   color: #fff;
+  border: 1px solid #ff6b00;
+}
+
+.recent-works .background-card-1 .project-button:hover {
+  padding: 12px 12px;
+  background-color: #fff5e1;
+  font-family: 'Inter', sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #f55800;
+  border: 1px solid #ff6b00;
 }
 
 .about-me {
@@ -238,6 +272,21 @@ header .title {
   color: #fff;
   margin: auto 24px 180px;
   width: fit-content;
+  border:  1px #ff6b00 solid;
+}
+
+.about-me .button:hover {
+  padding: 12px 12px;
+  background-color: #fff5e1;
+  font-family: 'Inter', sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #ff6b00;
+  margin: auto 24px 180px;
+  width: fit-content;
+  border:  1px #ff6b00 solid;
 }
 
 .about-me .underline {
