@@ -15,8 +15,6 @@
 
 Clone repo https://github.com/limavfabio/My-Portfolio
 
-cd initialDesign
-
 ### Prerequisites
 
 Any browser
