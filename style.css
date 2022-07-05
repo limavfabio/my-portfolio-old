@@ -398,3 +398,7 @@ form.send-message button {
   letter-spacing: 0.03em;
   color: #fff;
 }
+
+.footer .social-icons {
+  fill: #505F79;
+}
