@@ -136,6 +136,10 @@ header .title {
   gap: 12px;
 }
 
+h4 {
+  margin: 0;
+}
+
 .recent-works .img-card-1 .simple-button {
   display: flex;
   flex-direction: row;
