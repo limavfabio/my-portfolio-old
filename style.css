@@ -340,12 +340,12 @@ h4 {
 }
 
 .contact-section h2 {
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
   text-align: center;
-  color: #172B4D;
+  color: #172b4d;
   margin: 120px 24px;
 }
 
@@ -361,29 +361,29 @@ input {
 }
 
 form.send-message input#name {
-  border-bottom: 1px #DBD8D7 solid;
+  border-bottom: 1px #dbd8d7 solid;
   padding: 12px;
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-size: 15px;
   line-height: 24px;
-  color: #3C3A39;
+  color: #3c3a39;
 }
 
 form.send-message input#mail {
-  border-bottom: 1px #DBD8D7 solid;
+  border-bottom: 1px #dbd8d7 solid;
   padding: 12px;
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-size: 15px;
   line-height: 24px;
-  color: #3C3A39;
+  color: #3c3a39;
 }
 
 form.send-message textarea {
-  border-bottom: 1px #DBD8D7 solid;
-  font-family: 'Inter';
+  border-bottom: 1px #dbd8d7 solid;
+  font-family: 'Inter', sans-serif;
   font-size: 15px;
   line-height: 24px;
-  color: #3C3A39;
+  color: #3c3a39;
   background: #f8f0ed;
   border: none;
   height: 114px;
@@ -394,8 +394,8 @@ form.send-message button {
   align-self: center;
   padding: 12px;
   width: 131px;
-  background: #FF6B00;
-  font-family: 'Inter';
+  background: #ff6b00;
+  font-family: 'Inter', sans-serif;
   font-weight: 700;
   font-size: 17px;
   text-align: center;
@@ -404,13 +404,9 @@ form.send-message button {
 }
 
 .footer .social-icons {
-  fill: #505F79;
-  border-top: 2px solid #DFE1E6;
+  fill: #505f79;
+  border-top: 2px solid #dfe1e6;
   margin-top: 100px;
-
-}
-
-.social-icons {
   height: 80px;
   display: flex;
   flex-direction: row;
