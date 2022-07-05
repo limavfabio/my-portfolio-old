@@ -401,4 +401,16 @@ form.send-message button {
 
 .footer .social-icons {
   fill: #505F79;
+  border-top: 2px solid #DFE1E6;
+  margin-top: 100px;
+
+}
+
+.social-icons {
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;
 }
