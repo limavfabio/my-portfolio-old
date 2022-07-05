@@ -334,3 +334,67 @@ header .title {
   line-height: 55px;
   padding-bottom: 20px;
 }
+
+.contact-section h2 {
+  font-family: 'Inter';
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  text-align: center;
+  color: #172B4D;
+  margin: 120px 24px;
+}
+
+form.send-message {
+  display: flex;
+  flex-direction: column;
+  margin: auto 24px;
+  gap: 24px;
+}
+
+input {
+  border: none;
+}
+
+form.send-message input#name {
+  border-bottom: 1px #DBD8D7 solid;
+  padding: 12px;
+  font-family: 'Inter';
+  font-size: 15px;
+  line-height: 24px;
+  color: #3C3A39;
+}
+
+form.send-message input#mail {
+  border-bottom: 1px #DBD8D7 solid;
+  padding: 12px;
+  font-family: 'Inter';
+  font-size: 15px;
+  line-height: 24px;
+  color: #3C3A39;
+}
+
+form.send-message textarea {
+  border-bottom: 1px #DBD8D7 solid;
+  font-family: 'Inter';
+  font-size: 15px;
+  line-height: 24px;
+  color: #3C3A39;
+  background: #f8f0ed;
+  border: none;
+  height: 114px;
+  padding: 12px;
+}
+
+form.send-message button {
+  align-self: center;
+  padding: 12px;
+  width: 131px;
+  background: #FF6B00;
+  font-family: 'Inter';
+  font-weight: 700;
+  font-size: 17px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #fff;
+}
