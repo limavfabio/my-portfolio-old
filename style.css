@@ -20,7 +20,31 @@ header {
   background-color: #3c3a39;
 }
 
-header .title {
+nav.desktop {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .hamburguer-button {
+    display: none;
+  }
+  nav.desktop {
+    display: flex;
+    align-items: center;
+  }
+  nav.desktop ul {
+    display: flex;
+    gap: 32px;
+    font-family: 'Inter', serif;
+    font-weight: 600;
+    font-size: 15px;
+    color: #fff;
+    margin-right: 151px;
+  }
+
+}
+
+header .logo {
   font-weight: 700;
   color: #fff;
   margin: 19px auto 19px 24px;
