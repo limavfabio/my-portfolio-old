@@ -131,8 +131,7 @@ header .logo {
 }
 
 .recent-works {
-  padding-top: 120px;
-  display: grid;
+  padding-top: 60px;
   justify-content: center;
   margin: auto 24px;
 }
@@ -300,6 +299,29 @@ h4 {
   letter-spacing: 0.03em;
   color: #f55800;
   border: 1px solid #ff6b00;
+}
+
+@media screen and (min-width: 768px) {
+  .recent-works .top {
+    flex-direction: row;
+  }
+  .recent-works .grid-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: max-content 1fr 1fr;
+    gap: 24px;
+  }
+  .recent-works .img-card-1 {
+    grid-column: 1/4;
+    display: flex;
+    gap: 24px;
+  }
+  .img-card-1 .main-image {
+    flex-grow: 1;
+  }
+  .img-card-1 .main-body {
+    flex-shrink: 3;
+  }
 }
 
 .about-me {
