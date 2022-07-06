@@ -24,26 +24,6 @@ nav.desktop {
   display: none;
 }
 
-@media screen and (min-width: 768px) {
-  .hamburguer-button {
-    display: none;
-  }
-  nav.desktop {
-    display: flex;
-    align-items: center;
-  }
-  nav.desktop ul {
-    display: flex;
-    gap: 32px;
-    font-family: 'Inter', serif;
-    font-weight: 600;
-    font-size: 15px;
-    color: #fff;
-    margin-right: 151px;
-  }
-
-}
-
 header .logo {
   font-weight: 700;
   color: #fff;
@@ -62,33 +42,60 @@ header .logo {
   border-radius: 10px;
 }
 
+@media screen and (min-width: 768px) {
+  header .logo {
+    padding-left: 85px;
+  }
+  .hamburguer-button {
+    display: none;
+  }
+  nav.desktop {
+    display: flex;
+    align-items: center;
+  }
+  nav.desktop ul {
+    display: flex;
+    gap: 32px;
+    font-family: 'Inter', serif;
+    font-weight: 600;
+    font-size: 15px;
+    color: #fff;
+    margin-right: 100px;
+  }
+
+}
+
 .headline {
   background-image: url(media/Illustration.svg);
   background-repeat: no-repeat;
   background-position: right bottom;
   padding: 100px 25px 35px;
-  display: flex;
-  flex-direction: column;
+  display: block;
   background-color: #1c1a19;
 }
 
-.headline h1 {
+.hero {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero h1 {
   font-family: 'Crete Round', serif;
   font-size: 56px;
   font-weight: 400;
   line-height: 64px;
   color: #ff6b00;
-  margin: 0 auto auto 0;
+  margin: 0 auto 0 0;
 }
 
-.headline .title {
+.hero .title {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   color: #fff5e1;
   line-height: 32px;
   margin: 10px 0;
 }
 
-.headline .description {
+.hero .description {
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -102,6 +109,25 @@ header .logo {
   gap: 20px;
   padding-top: 20px;
   padding-bottom: 130px;
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    margin-left: 60px;
+    max-width: 40%;
+  }
+  .headline{
+    padding-top: 140px;
+    padding-bottom: 90px;
+    display: flex;
+    background-image: url(media/Illustration-header.svg);
+    background-size: contain;
+  }
+  .headline .social-icons {
+    padding-top: 70px;
+    flex-direction: column;
+    order: -1;
+  }
 }
 
 .recent-works {
