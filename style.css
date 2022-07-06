@@ -309,6 +309,9 @@ h4 {
 }
 
 @media screen and (min-width: 768px) {
+  .recent-works {
+    margin: auto 100px;
+  }
   .recent-works .top {
     flex-direction: row;
   }
@@ -383,7 +386,8 @@ h4 {
 }
 
 .about-me .underline {
-  align-self: center;
+  border-bottom: solid 1px #fff;
+  margin: auto 24px;
 }
 
 .skills-section {
@@ -426,6 +430,15 @@ h4 {
   color: #fff;
   line-height: 55px;
   padding-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .about-me {
+    background-image: url(media/illustration-about-me.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+
+  }
 }
 
 .contact-section h2 {
