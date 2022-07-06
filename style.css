@@ -89,6 +89,9 @@ header .title {
 
 .top {
   margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .top .title {
@@ -101,6 +104,10 @@ header .title {
 
 .recent-works .img-card-1 {
   color: #091e42;
+}
+
+.recent-works .img-card-1 img {
+  width: 100%;
 }
 
 .recent-works .img-card-1 .project-title {
