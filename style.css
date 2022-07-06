@@ -143,12 +143,19 @@ header .logo {
   align-items: center;
 }
 
+.top .underline {
+  border-bottom: solid 1px #212121;
+  width: 100%;
+  margin: 30px;
+}
+
 .top .title {
   margin-bottom: 15px;
   font-family: 'Crete Round', serif;
   font-weight: 400;
   font-size: 40px;
   color: #1c1a19;
+  min-width: fit-content;
 }
 
 .recent-works .img-card-1 {
@@ -304,6 +311,9 @@ h4 {
 @media screen and (min-width: 768px) {
   .recent-works .top {
     flex-direction: row;
+  }
+  .top .underline {
+    padding-top: 20px;
   }
   .recent-works .grid-wrapper {
     display: grid;
