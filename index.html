@@ -12,7 +12,15 @@
 </head>
 <body>
   <header>
-      <div class="title">John Doe</div>
+      <div class="logo">John Doe</div>
+      <nav class="desktop">
+        <ul>
+          <li>Portfolio</li>
+          <li>About</li>
+          <li>Contact</li>
+          <li><img src="media/Icons/icon-mail.svg" alt=""></li>
+        </ul>
+      </nav>
       <div class="hamburguer-button">
           <div class="bar"></div>
           <div class="bar"></div>
@@ -20,13 +28,15 @@
       </div>
   </header>
   <section class="headline">
-      <h1>Hey There.<br>I'm Fábio</h1>
-      <h2 class="title">I'm a Software Developer</h2>
-      <div class="description">
-        I can help you build a product, feature or website.
-        Look through some of my work and experience! If you like
-        what you see and have a project you need coded, don't
-        hesitate to contact me.
+      <div class="hero">
+        <h1>Hey There.<br>I'm Fábio</h1>
+        <h2 class="title">I'm a Software Developer</h2>
+        <p class="description">
+          I can help you build a product, feature or website.
+          Look through some of my work and experience! If you like
+          what you see and have a project you need coded, don't
+          hesitate to contact me.
+        </p>
       </div>
       <ul class="social-icons">
         <li class="github"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg></li>
@@ -38,118 +48,132 @@
   <section class="recent-works">
     <div class="top">
       <h2 class="title">My Recent Works</h2>
-      <div><img src="media/underline.svg" alt=""></div>
+      <div class="underline"></div>
     </div>
-    <div class="img-card-1">
-      <div class="main-image"><img src="media/Img-Placeholder.png" alt=""></div>
-      <h3 class="project-title">Multi-Post Stories</h3>
-      <p class="description">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.</p>
-      <ul class="buttons">
-        <li class="simple-button">css</li>
-        <li class="simple-button">html</li>
-        <li class="simple-button">bootstrap</li>
-        <li class="simple-button">Ruby</li>
-      </ul>
+    <div class="grid-wrapper">
+      <div class="img-card-1">
+        <div class="main-image"><img src="media/Img-Placeholder.png" alt=""></div>
+        <div class="main-body">
+          <h3 class="project-title">Multi-Post Stories</h3>
+          <p class="description">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.</p>
+          <ul class="buttons">
+            <li class="simple-button">css</li>
+            <li class="simple-button">html</li>
+            <li class="simple-button">bootstrap</li>
+            <li class="simple-button">Ruby</li>
+          </ul>
+            <button class="project-button">See Project</button>
+        </div>
+      </div>
+      <div class="background-card-1">
+        <h3 class="project-title">Profesional Art Printing Data</h3>
+        <p class="description">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
+        <ul class="buttons">
+          <li class="simple-button">html</li>
+          <li class="simple-button">bootstrap</li>
+          <li class="simple-button">Ruby</li>
+        </ul>
         <button class="project-button">See Project</button>
-    </div>
-    <div class="background-card-1">
-      <h3 class="project-title">Profesional Art Printing Data</h3>
-      <p class="description">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
-      <ul class="buttons">
-        <li class="simple-button">html</li>
-        <li class="simple-button">bootstrap</li>
-        <li class="simple-button">Ruby</li>
-      </ul>
-      <button class="project-button">See Project</button>
-    </div>
-    <div class="background-card-1">
-      <h3 class="project-title">Profesional Art Printing Data</h3>
-      <p class="description">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
-      <ul class="buttons">
-        <li class="simple-button">html</li>
-        <li class="simple-button">bootstrap</li>
-        <li class="simple-button">Ruby</li>
-      </ul>
-      <button class="project-button">See Project</button>
-    </div>
-    <div class="background-card-1">
-      <h3 class="project-title">Profesional Art Printing Data</h3>
-      <p class="description">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
-      <ul class="buttons">
-        <li class="simple-button">html</li>
-        <li class="simple-button">bootstrap</li>
-        <li class="simple-button">Ruby</li>
-      </ul>
-      <button class="project-button">See Project</button>
-    </div>
-    <div class="background-card-1">
-      <h3 class="project-title">Profesional Art Printing Data</h3>
-      <p class="description">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
-      <ul class="buttons">
-        <li class="simple-button">html</li>
-        <li class="simple-button">bootstrap</li>
-        <li class="simple-button">Ruby</li>
-      </ul>
-      <button class="project-button">See Project</button>
-    </div>
-    <div class="background-card-1">
-      <h3 class="project-title">Profesional Art Printing Data</h3>
-      <p class="description">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
-      <ul class="buttons">
-        <li class="simple-button">html</li>
-        <li class="simple-button">bootstrap</li>
-        <li class="simple-button">Ruby</li>
-      </ul>
-      <button class="project-button">See Project</button>
-    </div>
-    <div class="background-card-1">
-      <h3 class="project-title">Profesional Art Printing Data</h3>
-      <p class="description">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
-      <ul class="buttons">
-        <li class="simple-button">html</li>
-        <li class="simple-button">bootstrap</li>
-        <li class="simple-button">Ruby</li>
-      </ul>
-      <button class="project-button">See Project</button>
+      </div>
+      <div class="background-card-1">
+        <h3 class="project-title">Profesional Art Printing Data</h3>
+        <p class="description">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
+        <ul class="buttons">
+          <li class="simple-button">html</li>
+          <li class="simple-button">bootstrap</li>
+          <li class="simple-button">Ruby</li>
+        </ul>
+        <button class="project-button">See Project</button>
+      </div>
+      <div class="background-card-1">
+        <h3 class="project-title">Profesional Art Printing Data</h3>
+        <p class="description">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
+        <ul class="buttons">
+          <li class="simple-button">html</li>
+          <li class="simple-button">bootstrap</li>
+          <li class="simple-button">Ruby</li>
+        </ul>
+        <button class="project-button">See Project</button>
+      </div>
+      <div class="background-card-1">
+        <h3 class="project-title">Profesional Art Printing Data</h3>
+        <p class="description">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
+        <ul class="buttons">
+          <li class="simple-button">html</li>
+          <li class="simple-button">bootstrap</li>
+          <li class="simple-button">Ruby</li>
+        </ul>
+        <button class="project-button">See Project</button>
+      </div>
+      <div class="background-card-1">
+        <h3 class="project-title">Profesional Art Printing Data</h3>
+        <p class="description">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
+        <ul class="buttons">
+          <li class="simple-button">html</li>
+          <li class="simple-button">bootstrap</li>
+          <li class="simple-button">Ruby</li>
+        </ul>
+        <button class="project-button">See Project</button>
+      </div>
+      <div class="background-card-1">
+        <h3 class="project-title">Profesional Art Printing Data</h3>
+        <p class="description">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
+        <ul class="buttons">
+          <li class="simple-button">html</li>
+          <li class="simple-button">bootstrap</li>
+          <li class="simple-button">Ruby</li>
+        </ul>
+        <button class="project-button">See Project</button>
+      </div>
     </div>
   </section>
   <section class="about-me">
     <h2 class="title">About Me</h2>
     <p class="description">Hello I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.</p>
     <button class="button">Get My Resume</button>
-    <div class="underline"><img src="media/underline_dark-backgroud.svg" alt=""></div>
+    <div class="underline"></div>
   </section>
   <section class="skills-section">
-    <h4 class="title-languages"><img src="media/Icons/Rectangle-55.png" alt="">   Languages</h4>
-    <ul class="skills">
-      <li>Javascript</li>
-      <li>Ruby</li>
-      <li>HTML</li>
-      <li>CSS</li>
-    </ul>
-    <h4 class="title"><img src="media/Icons/Rectangle-56.png" alt="">   Frameworks</h4>
-    <ul class="skills">
-      <li>Bootstrap</li>
-      <li>Ruby on Rails</li>
-      <li>RSPec</li>
-      <li>CapyBara</li>
-      <li>Selenium</li>
-    </ul>
-    <h4 class="title"><img src="media/Icons/Rectangle-57.png" alt="">   Skills</h4>
-    <ul class="skills">
-      <li>Codekit</li>
-      <li>Github</li>
-      <li>Gitlab</li>
-      <li>Terminal</li>
-    </ul>
+    <div class="set1">
+      <h4 class="title"><img src="media/Icons/Rectangle-55.png" alt="">   Languages</h4>
+      <ul class="skills">
+        <li>Javascript</li>
+        <li>Ruby</li>
+        <li>HTML</li>
+        <li>CSS</li>
+      </ul>
+    </div>
+    <div class="set2">
+      <h4 class="title"><img src="media/Icons/Rectangle-56.png" alt="">   Frameworks</h4>
+      <ul class="skills">
+        <li>Bootstrap</li>
+        <li>Ruby on Rails</li>
+        <li>RSPec</li>
+        <li>CapyBara</li>
+        <li>Selenium</li>
+      </ul>
+    </div>
+    <div class="set3">
+      <h4 class="title"><img src="media/Icons/Rectangle-57.png" alt="">   Skills</h4>
+      <ul class="skills">
+        <li>Codekit</li>
+        <li>Github</li>
+        <li>Gitlab</li>
+        <li>Terminal</li>
+      </ul>
+    </div>
   </section>
   <section class="contact-section">
     <h2>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h2>
     <form class="send-message" action="https://formspree.io/f/xzbolebz" method="post">
-      <input maxlength="30" type="text" name="user_name" id="name" placeholder="Full Name" required>
+      <div>
+        <input maxlength="30" type="text" name="first_name" class="first name" placeholder="First Name" required>
+        <input maxlength="30" type="text" name="last_name" class="last name" placeholder="Last Name" required>
+      </div>
+      <input maxlength="30" type="text" name="full_name" class="full name" placeholder="Full Name" required>
       <input type="email" name="user_email" id="mail" placeholder="Email Adress" required>
       <textarea maxlength= "500" name="user_message" id="msg" placeholder="Enter Text Here" required></textarea>
-      <button type="submit">Send</button>
+      <button type="submit">Get in touch</button>
     </form>
   </section>
   <section class="footer">

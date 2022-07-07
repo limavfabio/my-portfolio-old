@@ -20,7 +20,11 @@ header {
   background-color: #3c3a39;
 }
 
-header .title {
+nav.desktop {
+  display: none;
+}
+
+header .logo {
   font-weight: 700;
   color: #fff;
   margin: 19px auto 19px 24px;
@@ -38,33 +42,62 @@ header .title {
   border-radius: 10px;
 }
 
+@media screen and (min-width: 768px) {
+  header .logo {
+    padding-left: 85px;
+  }
+
+  .hamburguer-button {
+    display: none;
+  }
+
+  nav.desktop {
+    display: flex;
+    align-items: center;
+  }
+
+  nav.desktop ul {
+    display: flex;
+    gap: 32px;
+    font-family: 'Inter', serif;
+    font-weight: 600;
+    font-size: 15px;
+    color: #fff;
+    margin-right: 100px;
+  }
+}
+
 .headline {
   background-image: url(media/Illustration.svg);
   background-repeat: no-repeat;
   background-position: right bottom;
   padding: 100px 25px 35px;
-  display: flex;
-  flex-direction: column;
+  display: block;
   background-color: #1c1a19;
 }
 
-.headline h1 {
+.hero {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero h1 {
   font-family: 'Crete Round', serif;
   font-size: 56px;
   font-weight: 400;
   line-height: 64px;
   color: #ff6b00;
-  margin: 0 auto auto 0;
+  margin: 0 auto 0 0;
 }
 
-.headline .title {
+.hero .title {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   color: #fff5e1;
   line-height: 32px;
   margin: 10px 0;
 }
 
-.headline .description {
+.hero .description {
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -80,15 +113,44 @@ header .title {
   padding-bottom: 130px;
 }
 
+@media screen and (min-width: 768px) {
+  .hero {
+    margin-left: 60px;
+    max-width: 40%;
+  }
+
+  .headline {
+    padding-top: 140px;
+    padding-bottom: 90px;
+    display: flex;
+    background-image: url(media/Illustration-header.svg);
+    background-size: contain;
+  }
+
+  .headline .social-icons {
+    padding-top: 70px;
+    flex-direction: column;
+    order: -1;
+  }
+}
+
 .recent-works {
-  padding-top: 120px;
-  display: grid;
+  padding-top: 60px;
   justify-content: center;
   margin: auto 24px;
 }
 
 .top {
   margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.top .underline {
+  border-bottom: solid 1px #212121;
+  width: 100%;
+  margin: 30px;
 }
 
 .top .title {
@@ -97,10 +159,15 @@ header .title {
   font-weight: 400;
   font-size: 40px;
   color: #1c1a19;
+  min-width: fit-content;
 }
 
 .recent-works .img-card-1 {
   color: #091e42;
+}
+
+.recent-works .img-card-1 img {
+  width: 100%;
 }
 
 .recent-works .img-card-1 .project-title {
@@ -128,6 +195,7 @@ header .title {
   line-height: 22px;
   text-align: left;
   margin-bottom: 10px;
+  max-width: 90%;
 }
 
 .recent-works .img-card-1 .buttons {
@@ -245,6 +313,42 @@ h4 {
   border: 1px solid #ff6b00;
 }
 
+@media screen and (min-width: 768px) {
+  .recent-works {
+    margin: auto 100px;
+  }
+
+  .recent-works .top {
+    flex-direction: row;
+  }
+
+  .top .underline {
+    padding-top: 20px;
+  }
+
+  .recent-works .grid-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: max-content 1fr 1fr;
+    gap: 24px;
+  }
+
+  .recent-works .img-card-1 {
+    grid-column: 1/4;
+    display: flex;
+    gap: 24px;
+  }
+
+  .img-card-1 .main-image {
+    flex-grow: 1;
+  }
+
+  .img-card-1 .main-body {
+    flex-shrink: 3;
+    min-width: 303px;
+  }
+}
+
 .about-me {
   display: flex;
   flex-direction: column;
@@ -274,47 +378,45 @@ h4 {
   line-height: 24px;
   letter-spacing: 0.03em;
   color: #fff;
-  margin: auto 24px 180px;
+  margin: auto 24px 150px;
   width: fit-content;
   border: 1px #ff6b00 solid;
 }
 
 .about-me .button:hover {
-  padding: 12px 12px;
   background-color: #fff5e1;
   font-family: 'Inter', sans-serif;
-  font-size: 17px;
-  font-weight: 700;
-  line-height: 24px;
-  letter-spacing: 0.03em;
   color: #ff6b00;
-  margin: auto 24px 180px;
-  width: fit-content;
   border: 1px #ff6b00 solid;
 }
 
 .about-me .underline {
-  align-self: center;
+  border-bottom: solid 1px #fff;
+  margin: auto 24px;
 }
 
 .skills-section {
   background-color: #1c1a19;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   padding-bottom: 100px;
 }
 
-.skills-section .title-languages {
-  font-family: 'Inter', sans-serif;
-  font-size: 32px;
-  font-weight: 600;
-  line-height: 44px;
-  text-align: left;
-  color: #fff;
-  white-space: pre;
-  padding-bottom: 20px;
+.skills-section .set1 {
   padding-top: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skills-section .set2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skills-section .set3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .skills-section .title {
@@ -326,7 +428,6 @@ h4 {
   color: #fff;
   white-space: pre;
   padding-bottom: 20px;
-  padding-top: 20px;
 }
 
 .skills-section .skills {
@@ -337,6 +438,38 @@ h4 {
   color: #fff;
   line-height: 55px;
   padding-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .about-me {
+    background-image: url(media/illustration-about-me.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    padding-left: 70px;
+    padding-right: 60px;
+    background-size: 40%;
+  }
+
+  .about-me title,
+  .about-me .description {
+    max-width: 50%;
+  }
+
+  .skills-section {
+    padding-top: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-left: 90px;
+  }
+
+  .skills-section .set1,
+  .skills-section .set2,
+  .skills-section .set3,
+  .skills-section .skills {
+    padding-top: 0;
+    align-items: start;
+    text-align: start;
+  }
 }
 
 .contact-section h2 {
@@ -360,7 +493,11 @@ input {
   border: none;
 }
 
-form.send-message input#name {
+form.send-message div {
+  display: none;
+}
+
+form.send-message input.name {
   border-bottom: 1px #dbd8d7 solid;
   padding: 12px;
   font-family: 'Inter', sans-serif;
@@ -401,6 +538,37 @@ form.send-message button {
   text-align: center;
   letter-spacing: 0.03em;
   color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+  .contact-section {
+    display: flex;
+  }
+
+  .contact-section h2 {
+    max-width: 35%;
+    text-align: start;
+    margin: 120px 40px 0 90px;
+    min-width: 260px;
+  }
+
+  .contact-section form {
+    width: 100%;
+    margin: 120px 100px auto auto;
+  }
+
+  .contact-section form button {
+    align-self: start;
+  }
+
+  form.send-message div {
+    display: flex;
+    gap: 12px;
+  }
+
+  form.send-message input.full {
+    display: none;
+  }
 }
 
 .footer .social-icons {
