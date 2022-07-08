@@ -1,5 +1,6 @@
 button {
   all: unset;
+  transition: 300ms;
 }
 
 ul {
@@ -339,6 +340,10 @@ h4 {
     gap: 24px;
   }
 
+  .main-image:hover {
+    transition: 400ms;
+    scale: 1.05;
+  } 
   .img-card-1 .main-image {
     flex-grow: 1;
   }
