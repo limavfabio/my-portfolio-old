@@ -21,7 +21,12 @@ header {
   background-color: #3c3a39;
 }
 
-nav.desktop {
+nav {
+  display: flex;
+
+}
+
+nav .desktop {
   display: none;
 }
 
@@ -32,6 +37,7 @@ header .logo {
 }
 
 .hamburguer-button {
+  display: block;
   margin: 19px 24px 19px auto;
 }
 
@@ -52,12 +58,12 @@ header .logo {
     display: none;
   }
 
-  nav.desktop {
+  nav .desktop {
     display: flex;
     align-items: center;
   }
 
-  nav.desktop ul {
+  nav .desktop ul {
     display: flex;
     gap: 32px;
     font-family: 'Inter', serif;
@@ -343,7 +349,8 @@ h4 {
   .main-image:hover {
     transition: 400ms;
     scale: 1.05;
-  } 
+  }
+
   .img-card-1 .main-image {
     flex-grow: 1;
   }
