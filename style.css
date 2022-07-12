@@ -16,17 +16,17 @@ li a:focus-visible {
   transition: none;
 }
 
+button {
+  all: unset;
+  transition: 300ms;
+}
+
 button:focus-visible {
   outline: auto;
   outline-color: crimson;
   outline-style: dashed;
   outline-offset: 2px;
   transition: none;
-}
-
-button {
-  all: unset;
-  transition: 300ms;
 }
 
 ul {
@@ -49,7 +49,6 @@ header {
 
 nav {
   display: flex;
-
 }
 
 nav .desktop {
