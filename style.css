@@ -4,6 +4,22 @@ a {
   fill: inherit;
 }
 
+li a:focus-visible {
+  outline: auto;
+  outline-color: crimson;
+  outline-style: dashed;
+  outline-offset: 2px;
+  transition: none;
+}
+
+button:focus-visible {
+  outline: auto;
+  outline-color: crimson;
+  outline-style: dashed;
+  outline-offset: 2px;
+  transition: none;
+}
+
 button {
   all: unset;
   transition: 300ms;
@@ -556,6 +572,14 @@ form.send-message button {
   text-align: center;
   letter-spacing: 0.03em;
   color: #fff;
+}
+
+form.send-message button:focus-visible {
+  outline: auto;
+  outline-color: crimson;
+  outline-style: dashed;
+  outline-offset: 2px;
+  transition: none;
 }
 
 @media screen and (min-width: 768px) {
