@@ -255,7 +255,7 @@ h4 {
 
 .recent-works .img-card-1 .project-button {
   padding: 12px 12px;
-  background-color: #943E00;
+  background-color: #943e00;
   font-family: 'Inter', sans-serif;
   font-size: 17px;
   font-weight: 700;
@@ -263,19 +263,19 @@ h4 {
   letter-spacing: 0.03em;
   color: #fff;
   margin-top: 12px;
-  border: 1px solid #943E00;
+  border: 1px solid #943e00;
 }
 
 .recent-works .background-card-1 .project-button {
   padding: 12px 12px;
-  background-color: #943E00;
+  background-color: #943e00;
   font-family: 'Inter', sans-serif;
   font-size: 17px;
   font-weight: 700;
   line-height: 24px;
   letter-spacing: 0.03em;
   color: #fff;
-  border: 1px solid #943E00;
+  border: 1px solid #943e00;
 }
 
 .recent-works .img-card-1 .project-button:hover {
@@ -286,9 +286,9 @@ h4 {
   font-weight: 700;
   line-height: 24px;
   letter-spacing: 0.03em;
-  color: #943E00;
+  color: #943e00;
   margin-top: 12px;
-  border: 1px solid #943E00;
+  border: 1px solid #943e00;
 }
 
 .recent-works .background-card-1 {
@@ -341,8 +341,8 @@ h4 {
   font-weight: 700;
   line-height: 24px;
   letter-spacing: 0.03em;
-  color: #943E00;
-  border: 1px solid #943E00;
+  color: #943e00;
+  border: 1px solid #943e00;
 }
 
 @media screen and (min-width: 768px) {
@@ -408,7 +408,7 @@ h4 {
 
 .about-me .button {
   padding: 12px 12px;
-  background-color: #943E00;
+  background-color: #943e00;
   font-family: 'Inter', sans-serif;
   font-size: 17px;
   font-weight: 700;
@@ -417,14 +417,14 @@ h4 {
   color: #fff;
   margin: auto 24px 150px;
   width: fit-content;
-  border: 1px #943E00 solid;
+  border: 1px #943e00 solid;
 }
 
 .about-me .button:hover {
   background-color: #fff5e1;
   font-family: 'Inter', sans-serif;
-  color: #943E00;
-  border: 1px #943E00 solid;
+  color: #943e00;
+  border: 1px #943e00 solid;
 }
 
 .about-me .underline {
@@ -568,7 +568,7 @@ form.send-message button {
   align-self: center;
   padding: 12px;
   width: 131px;
-  background: #943E00;
+  background: #943e00;
   font-family: 'Inter', sans-serif;
   font-weight: 700;
   font-size: 17px;
