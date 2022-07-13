@@ -294,7 +294,7 @@ h4 {
 .recent-works .background-card-1 {
   background-image: url(media/background-card-2);
   margin-top: 24px;
-  background-color: #000000;
+  background-color: #000;
   display: flex;
   flex-direction: column;
 }
