@@ -51,15 +51,47 @@ nav {
   align-items: center;
 }
 
+nav.mobile {
+  height: 100vh;
+  align-items: start;
+}
+
 nav .menu {
   display: none;
   margin-left: auto;
+}
+
+nav.mobile .menu {
+  display: block;
+  margin-left: 30px;
+  margin-top: 70px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  color: #FFF5E1;
+}
+
+nav.mobile .menu li {
+  margin-bottom: 25px;
+  padding-left: 15px;
+  padding-bottom: 10px ;
+  border-bottom: 1px solid #6F6C6B;
+}
+
+/* removes the envelope icon from the mobile menu */
+nav.mobile .menu li:nth-child(4) {
+  display: none;
 }
 
 nav .logo {
   padding-left: 30px;
   font-weight: 700;
   color: #fff;
+}
+
+nav.mobile .logo {
+  display: none;
 }
 
 .hamburguer-button {
@@ -76,6 +108,21 @@ nav .logo {
   margin: 3px 0;
   border-radius: 10px;
 }
+
+/* Turns the hamburger button into a x */
+nav.mobile .hamburguer-button .bar:nth-child(1) {
+  transform: rotate(45deg);
+}
+
+nav.mobile .hamburguer-button .bar:nth-child(2) {
+  transform: rotate(-45deg);
+  margin-top: -6px;
+}
+
+nav.mobile .hamburguer-button .bar:nth-child(3) {
+  display: none;
+}
+
 
 @media screen and (min-width: 768px) {
   nav .logo {
