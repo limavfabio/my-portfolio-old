@@ -42,28 +42,31 @@ body {
 header {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 18px;
-  display: flex;
-  flex-direction: row;
   background-color: #3c3a39;
 }
 
 nav {
   display: flex;
+  height: 50px;
+  align-items: center;
 }
 
-nav .desktop {
+nav .menu {
   display: none;
+  margin-left: auto;
 }
 
-header .logo {
+nav .logo {
+  padding-left: 30px;
   font-weight: 700;
   color: #fff;
-  margin: 19px auto 19px 24px;
 }
 
 .hamburguer-button {
   display: block;
-  margin: 19px 24px 19px auto;
+  position: absolute;
+  top: 12px;
+  right: 26px;
 }
 
 .hamburguer-button .bar {
@@ -75,20 +78,20 @@ header .logo {
 }
 
 @media screen and (min-width: 768px) {
-  header .logo {
-    padding-left: 85px;
+  nav .logo {
+    padding-left: 110px;
   }
 
   .hamburguer-button {
     display: none;
   }
 
-  nav .desktop {
+  nav .menu {
     display: flex;
     align-items: center;
   }
 
-  nav .desktop ul {
+  nav .menu ul {
     display: flex;
     gap: 32px;
     font-family: 'Inter', serif;
