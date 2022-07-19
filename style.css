@@ -59,7 +59,7 @@ nav {
   width: 100%;
   align-items: start;
   position: fixed;
-  background-color: #3C3A39;
+  background-color: #3c3a39;
   display: block;
   padding-left: 30px;
   padding-top: 70px;
@@ -67,8 +67,7 @@ nav {
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
-  color: #FFF5E1;
-  display: flex;
+  color: #fff5e1;
 }
 
 #offcanvas.active {
@@ -88,24 +87,15 @@ nav .menu {
   width: 100%;
   margin-bottom: 25px;
   padding-left: 15px;
-  padding-bottom: 10px ;
-  border-bottom: 1px solid #6F6C6B;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #6f6c6b;
 }
-
-/* removes the envelope icon from the mobile menu
-nav.mobile .menu li:nth-child(4) {
-  display: none;
-} */
 
 nav .logo {
   padding-left: 30px;
   font-weight: 700;
   color: #fff;
 }
-
-/* nav.mobile .logo {
-  display: none;
-} */
 
 .hamburguer-button {
   margin-left: auto;
@@ -128,15 +118,12 @@ nav .logo {
 
 .hamburguer-button.active .bar:nth-child(2) {
   transform: rotate(-45deg);
-
   margin-top: -6px;
 }
 
 .hamburguer-button.active .bar:nth-child(3) {
   display: none;
-
 }
-
 
 @media screen and (min-width: 768px) {
   nav .logo {
