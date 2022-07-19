@@ -12,9 +12,18 @@
 </head>
 <body>
   <header>
-      <div class="logo">John Doe</div>
-      <nav>
-        <div class="desktop">
+    <div id="offcanvas" class="">
+      <div class="menu">
+        <ul>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+      <nav id="navbar">
+        <div class="logo">Fábio Lima</div>
+        <div class="menu">
           <ul>
             <li><a href="#portfolio">Portfolio</a></li>
             <li><a href="#about">About</a></li>
@@ -22,7 +31,7 @@
             <li><a href="#contact"><img src="media/Icons/icon-mail.svg" alt="Contact link"></a></li>
           </ul>
         </div>
-        <a class="hamburguer-button">
+        <a id="toggle" href="#" class="hamburguer-button">
           <div class="bar"></div>
           <div class="bar"></div>
           <div class="bar"></div>
@@ -170,12 +179,12 @@
     <form class="send-message" action="https://formspree.io/f/xzbolebz" method="post">
       <div>
         <label for="firstname">First Name:</label>
-        <input maxlength="30" type="text" id="firstname" name="first_name" class="first name" placeholder="First Name" required>
+        <input maxlength="30" type="text" id="firstname" name="first_name" class="first name" placeholder="First Name">
         <label for="lastname">Last Name</label>
-        <input maxlength="30" type="text" id="lastname" name="last_name" class="last name" placeholder="Last Name" required>
+        <input maxlength="30" type="text" id="lastname" name="last_name" class="last name" placeholder="Last Name">
       </div>
       <label for="fullname">Full Name</label>
-      <input maxlength="30" type="text" id="fullname" name="full_name" class="full name" placeholder="Full Name" required>
+      <input maxlength="30" type="text" id="fullname" name="full_name" class="full name" placeholder="Full Name">
       <label for="mail">Email</label>
       <input type="email" name="user_email" id="mail" placeholder="Email Adress" required>
       <label for="msg">User Message</label>
@@ -191,5 +200,6 @@
       <li class="twitter"><a href="https://twitter.com/limavfabio/"><img src="media/Icons/iconmonstr-twitter-dark.svg" alt="Twitter Link"></a></li>
     </ul>
   </section>
+  <script src="script.js"></script>
 </body>
 </html>
