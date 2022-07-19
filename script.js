@@ -14,3 +14,9 @@ toggleButton.addEventListener('click', () => {
     nav.classList.toggle('active')
     toggle.classList.toggle("active")
 })
+
+document.querySelectorAll("#offcanvas a").forEach(n => n.
+    addEventListener("click", ()=>{
+        nav.classList.remove('active');
+        toggle.classList.remove("active");
+  }));
