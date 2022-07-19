@@ -1,22 +1,13 @@
-const offcanvasLinks = document.querySelectorAll('#offcanvas a')
-const nav = document.getElementById('offcanvas')
-const toggleButton = document.getElementById('toggle')
-
-
-// offcanvasLinks.addEventListener("click", () => {
-//     nav.classList.toggle('active')
-//     toggle.classList.toggle("active")
-// })
-
-
+const nav = document.getElementById('offcanvas');
+const toggleButton = document.getElementById('toggle');
 
 toggleButton.addEventListener('click', () => {
-    nav.classList.toggle('active')
-    toggle.classList.toggle("active")
-})
+  nav.classList.toggle('active');
+  toggleButton.classList.toggle('active');
+});
 
-document.querySelectorAll("#offcanvas a").forEach(n => n.
-    addEventListener("click", ()=>{
-        nav.classList.remove('active');
-        toggle.classList.remove("active");
+document.querySelectorAll('#offcanvas a').forEach((n) => n
+  .addEventListener('click', () => {
+    nav.classList.remove('active');
+    toggleButton.classList.remove('active');
   }));
