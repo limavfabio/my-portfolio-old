@@ -43,6 +43,8 @@ header {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 18px;
   background-color: #3c3a39;
+  position: fixed;
+  width: 100%;
 }
 
 nav {
@@ -51,9 +53,26 @@ nav {
   align-items: center;
 }
 
-nav.mobile {
+#offcanvas {
+  margin-left: 100%;
   height: 100vh;
+  width: 100%;
   align-items: start;
+  position: fixed;
+  background-color: #3C3A39;
+  display: block;
+  padding-left: 30px;
+  padding-top: 70px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  color: #FFF5E1;
+  display: flex;
+}
+
+#offcanvas.active {
+  margin-left: 0;
 }
 
 nav .menu {
@@ -61,28 +80,22 @@ nav .menu {
   margin-left: auto;
 }
 
-nav.mobile .menu {
-  display: block;
-  margin-left: 30px;
-  margin-top: 70px;
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 32px;
-  color: #FFF5E1;
+#offcanvas .menu {
+  width: 80%;
 }
 
-nav.mobile .menu li {
+#offcanvas .menu li {
+  width: 100%;
   margin-bottom: 25px;
   padding-left: 15px;
   padding-bottom: 10px ;
   border-bottom: 1px solid #6F6C6B;
 }
 
-/* removes the envelope icon from the mobile menu */
+/* removes the envelope icon from the mobile menu
 nav.mobile .menu li:nth-child(4) {
   display: none;
-}
+} */
 
 nav .logo {
   padding-left: 30px;
@@ -90,15 +103,13 @@ nav .logo {
   color: #fff;
 }
 
-nav.mobile .logo {
+/* nav.mobile .logo {
   display: none;
-}
+} */
 
 .hamburguer-button {
-  display: block;
-  position: absolute;
-  top: 12px;
-  right: 26px;
+  margin-left: auto;
+  margin-right: 30px;
 }
 
 .hamburguer-button .bar {
@@ -110,17 +121,20 @@ nav.mobile .logo {
 }
 
 /* Turns the hamburger button into a x */
-nav.mobile .hamburguer-button .bar:nth-child(1) {
+.hamburguer-button.active .bar:nth-child(1) {
   transform: rotate(45deg);
+  margin-top: 6px;
 }
 
-nav.mobile .hamburguer-button .bar:nth-child(2) {
+.hamburguer-button.active .bar:nth-child(2) {
   transform: rotate(-45deg);
+
   margin-top: -6px;
 }
 
-nav.mobile .hamburguer-button .bar:nth-child(3) {
+.hamburguer-button.active .bar:nth-child(3) {
   display: none;
+
 }
 
 

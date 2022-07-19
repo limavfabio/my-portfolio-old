@@ -1,12 +1,16 @@
-const menuLinks = document.querySelectorAll('.menu a')
-const nav = document.getElementById('navbar')
+const offcanvasLinks = document.querySelectorAll('#offcanvas a')
+const nav = document.getElementById('offcanvas')
 const toggleButton = document.getElementById('toggle')
 
 
-menuLinks.addEventListener('click', () => {
-    nav.classList.toggle('mobile')
-})
+// offcanvasLinks.addEventListener("click", () => {
+//     nav.classList.toggle('active')
+//     toggle.classList.toggle("active")
+// })
+
+
 
 toggleButton.addEventListener('click', () => {
-    nav.classList.toggle('mobile')
+    nav.classList.toggle('active')
+    toggle.classList.toggle("active")
 })
