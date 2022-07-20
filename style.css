@@ -40,7 +40,8 @@ body {
 }
 
 header {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 18px;
   background-color: #3c3a39;
   position: fixed;
@@ -174,7 +175,8 @@ nav .logo {
 }
 
 .hero .title {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   color: #fff5e1;
   line-height: 32px;
   margin: 10px 0;
@@ -261,15 +263,6 @@ nav .logo {
   margin: 10px auto;
 }
 
-.about-me .description {
-  font-family: 'Inter', sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  text-align: left;
-  color: #fff;
-  margin: 12px 24px 24px;
-}
-
 .recent-works .img-card-1 .description {
   font-family: 'Inter', sans-serif;
   font-size: 16px;
@@ -280,7 +273,7 @@ nav .logo {
   max-width: 90%;
 }
 
-.recent-works .img-card-1 .buttons {
+.recent-works .img-card-1 .tech-buttons {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
@@ -316,7 +309,7 @@ h4 {
   border: 1px solid #943e00;
 }
 
-.recent-works .background-card-1 .project-button {
+.recent-works .secondary-card .project-button {
   padding: 12px 12px;
   background-color: #943e00;
   font-family: 'Inter', sans-serif;
@@ -341,7 +334,7 @@ h4 {
   border: 1px solid #943e00;
 }
 
-.recent-works .background-card-1 {
+.recent-works .secondary-card {
   background-image: url(media/background-card-2);
   margin-top: 24px;
   background-color: #000;
@@ -349,7 +342,7 @@ h4 {
   flex-direction: column;
 }
 
-.recent-works .background-card-1 .project-title {
+.recent-works .secondary-card .project-title {
   font-family: 'Crete Round', serif;
   font-size: 32px;
   font-weight: 400;
@@ -359,7 +352,7 @@ h4 {
   margin: 60px 16px 20px;
 }
 
-.recent-works .background-card-1 .description {
+.recent-works .secondary-card .description {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -369,14 +362,14 @@ h4 {
   margin: 10px 16px 20px;
 }
 
-.recent-works .background-card-1 .buttons {
+.recent-works .secondary-card .tech-buttons {
   display: flex;
   gap: 12px;
   margin: 10px auto 20px 16px;
   color: #fff;
 }
 
-.recent-works .background-card-1 .simple-button {
+.recent-works .secondary-card .simple-button {
   padding: 10px 12px;
   background: rgba(255, 255, 255, 0.24);
   font-family: 'Inter', sans-serif;
@@ -384,7 +377,7 @@ h4 {
   font-size: 15px;
 }
 
-.recent-works .background-card-1 .project-button:hover {
+.recent-works .secondary-card .project-button:hover {
   padding: 12px 12px;
   background-color: #fff5e1;
   font-family: 'Inter', sans-serif;
@@ -455,6 +448,15 @@ h4 {
   color: #ff6b00;
   padding-top: 120px;
   margin: auto 24px;
+}
+
+.about-me .description {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: left;
+  color: #fff;
+  margin: 12px 24px 24px;
 }
 
 .about-me .button {
