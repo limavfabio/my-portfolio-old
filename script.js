@@ -2,7 +2,7 @@
 const nav = document.getElementById('offcanvas');
 const toggleButton = document.getElementById('toggle');
 const dynamicCards = document.querySelector('#dynamic-cards');
-
+const dynamicModal = document.querySelector('#dynamic-modal');
 // ---------------Script for the mobile hamburguer menu offcanvas
 toggleButton.addEventListener('click', () => {
   nav.classList.toggle('active');
@@ -15,6 +15,13 @@ document.querySelectorAll('#offcanvas a').forEach((n) =>
     toggleButton.classList.remove('active');
   })
 );
+
+//  -------------------Modal I/O function
+
+function toggleModal(id) {
+  const modal = document.getElementById(id);
+  modal.classList.add('showUp');
+}
 
 // --------------Arrays of project cards objects
 
@@ -34,7 +41,7 @@ const projects = [
   },
   {
     projectId: 1,
-    title: 'Profesional Art Printing Data',
+    title: 'Change title for testing',
     description:
       "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
     imageBig: 'link to the image',
@@ -135,9 +142,9 @@ for (let index = 1; index < projects.length; index += 1) {
   techButtons.setAttribute('class', 'tech-buttons');
   const techs = project.technologies;
   // For each techButton, generate a li element and a text node and append it to each parent accordingly
-  techs.forEach((tech) => {
+  techs.forEach((item) => {
     const techElement = document.createElement('li');
-    const techText = document.createTextNode(tech);
+    const techText = document.createTextNode(item);
     techElement.setAttribute('class', 'simple-button');
     techElement.appendChild(techText);
     techButtons.appendChild(techElement);
@@ -154,3 +161,105 @@ for (let index = 1; index < projects.length; index += 1) {
   //  Add div to dinamicProjects
   dynamicCards.appendChild(secondaryCard);
 }
+
+// ----------------Generate Modals
+function fillModal(id) {
+  const element = projects[id];
+  //  modalHead, a div for the title and techButtons
+  const modalHead = document.createElement('div');
+  modalHead.setAttribute('class', 'modal-head');
+  dynamicModal.appendChild(modalHead);
+  const modalTitle = document.createElement('h2');
+  const titleText = document.createTextNode(element.title);
+  modalTitle.appendChild(titleText);
+  modalHead.appendChild(modalTitle);
+  //  modalHead techButtons
+  const techButtons = document.createElement('ul');
+  techButtons.setAttribute('class', 'tech-buttons');
+  const techs = element.technologies;
+  techs.forEach((item) => {
+    const techElement = document.createElement('li');
+    const techText = document.createTextNode(item);
+    techElement.appendChild(techText);
+    techButtons.appendChild(techElement);
+    modalHead.appendChild(techButtons);
+  });
+  //  mainElement, a div for image + description + links
+  const mainElement = document.createElement('div');
+  mainElement.setAttribute('class', 'modal-main-element');
+  dynamicModal.appendChild(mainElement);
+  //  Modal Image
+  const modalImageElement = document.createElement('img');
+  modalImageElement.setAttribute('src', 'Set modal image path here');
+  mainElement.appendChild(modalImageElement);
+  //  bodyElement creates a div for description and links
+  const bodyElement = document.createElement('div');
+  bodyElement.setAttribute('class', 'body-element');
+  mainElement.appendChild(bodyElement);
+  //  Modal description
+  const modalDescription = document.createElement('p');
+  const modalDescriptionText = document.createTextNode(
+    element.modalDescription
+  );
+  modalDescription.appendChild(modalDescriptionText);
+  bodyElement.appendChild(modalDescription);
+  //  linksElement creates a div for links
+  const linksElement = document.createElement('div');
+  linksElement.setAttribute('class', 'links-element');
+  bodyElement.appendChild(linksElement);
+  //  Generate links
+  const linkLiveElement = document.createElement('a');
+  const linkLiveText = document.createTextNode('See Live');
+  const linkLiveIcon = document.createElement('div');
+  linkLiveIcon.setAttribute('class', 'image-icon1');
+  linkLiveElement.setAttribute('href', element.linkLive);
+  linkLiveElement.setAttribute('class', 'link-live');
+  const linkSourceIcon = document.createElement('div');
+  linkSourceIcon.setAttribute('class', 'image-icon2');
+  const linkSourceElement = document.createElement('a');
+  const linkSourceText = document.createTextNode('See Source');
+  linkSourceElement.setAttribute('href', element.linkSource);
+  linkSourceElement.setAttribute('class', 'link-source-element');
+  linkLiveElement.appendChild(linkLiveText);
+  linkSourceElement.appendChild(linkSourceText);
+  linkLiveElement.appendChild(linkLiveIcon);
+  linkSourceElement.appendChild(linkSourceIcon);
+  linksElement.appendChild(linkLiveElement);
+  linksElement.appendChild(linkSourceElement);
+  //  Close button for modal
+  const closeButton = document.createElement('button');
+  const closeButtonX = document.createTextNode('X');
+  closeButton.setAttribute('id', 'x-button');
+  closeButton.setAttribute('class', 'close-button');
+  closeButton.appendChild(closeButtonX);
+  dynamicModal.appendChild(closeButton);
+}
+
+function clearModal(id) {
+  const idElement = document.getElementById(id);
+  while (idElement.firstChild) {
+    idElement.removeChild(idElement.firstChild);
+  }
+}
+
+function showModal(id) {
+  clearModal(dynamicModal.id);
+  fillModal(id);
+  toggleModal('modal-container');
+}
+
+// eventListener for dynamic cards generator
+dinamicProjects.addEventListener('click', (event) => {
+  const elementId = event.target.id;
+  // But only alert for elements that have an buttons class
+  if (event.target.classList.contains('buttons')) {
+    showModal(elementId);
+  }
+});
+
+window.addEventListener('click', (event) => {
+  const modal = document.querySelector('#modal-container');
+  if (event.target === modal || event.target.className === 'close-buttom') {
+    modal.classList.remove('showUp');
+  }
+});

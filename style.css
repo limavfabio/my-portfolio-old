@@ -679,3 +679,107 @@ form.send-message button:focus-visible {
   align-items: center;
   column-gap: 10px;
 }
+
+/* Modals Styles */
+.modal-section {
+  display: none;
+  position: fixed;
+  top: 0;
+  padding-top: 5%;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  justify-content: center;
+}
+
+.modal-section.active {
+  display: flex;
+}
+
+.modal-container {
+  width: 80%;
+  height: fit-content;
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-container h2 {
+  margin-top: -20px;
+  color: #091e42;
+  font-family: 'Crete Round', serif;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 44px;
+  text-align: left;
+}
+
+.modal-container ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.modal-container .simple-button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 12px;
+  border: #8993a4 solid 1px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.modal-container img {
+  width: 100%;
+  margin-top: 20px;
+  max-width: 350px;
+}
+
+.modal-container p {
+  font-family: 'Inter', sans-serif;
+}
+
+.modal-container .project-button {
+  padding: 12px 12px;
+  background-color: #943e00;
+  font-family: 'Inter', sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #fff;
+  margin-top: 12px;
+  border: 1px solid #943e00;
+}
+
+.modal-head {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-container .buttonX {
+  align-self: flex-end;
+  font-size: larger;
+  font-family: 'Inter', sans-serif;
+}
+
+@media screen and (min-width: 768px) {
+  .modal-container .main-element {
+    display: flex;
+    gap: 20px;
+  }
+  .modal-container img {
+    max-width: 400px;
+  }
+}
