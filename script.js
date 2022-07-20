@@ -3,6 +3,7 @@ const nav = document.getElementById('offcanvas');
 const toggleButton = document.getElementById('toggle');
 const dynamicCards = document.querySelector('#dynamic-cards');
 const dynamicModal = document.querySelector('#dynamic-modal');
+const closeButton = document.querySelector('.close-button');
 // ---------------Script for the mobile hamburguer menu offcanvas
 toggleButton.addEventListener('click', () => {
   nav.classList.toggle('active');
@@ -18,9 +19,9 @@ document.querySelectorAll('#offcanvas a').forEach((n) =>
 
 //  -------------------Modal I/O function
 
-function toggleModal(id) {
-  const modal = document.getElementById(id);
-  modal.classList.add('showUp');
+function toggleModal(Id) {
+  const modal = document.getElementById(Id);
+  modal.classList.add('active');
 }
 
 // --------------Arrays of project cards objects
@@ -41,7 +42,7 @@ const projects = [
   },
   {
     projectId: 1,
-    title: 'Change title for testing',
+    title: 'Profesional Art Printing Data',
     description:
       "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
     imageBig: 'link to the image',
@@ -148,13 +149,13 @@ for (let index = 1; index < projects.length; index += 1) {
     techElement.setAttribute('class', 'simple-button');
     techElement.appendChild(techText);
     techButtons.appendChild(techElement);
-    secondaryCard.appendChild(techButtons);
+    // secondaryCard.appendChild(techButtons);
   });
   //  Generate see project button
   const projectButton = document.createElement('button');
   const btnText = document.createTextNode('See project');
   projectButton.setAttribute('class', 'project-button');
-  projectButton.setAttribute('id', project.projectId);
+  projectButton.setAttribute('Id', project.projectId);
   projectButton.appendChild(btnText);
   secondaryCard.appendChild(projectButton);
 
@@ -163,8 +164,8 @@ for (let index = 1; index < projects.length; index += 1) {
 }
 
 // ----------------Generate Modals
-function fillModal(id) {
-  const element = projects[id];
+function fillModal(Id) {
+  const element = projects[Id];
   //  modalHead, a div for the title and techButtons
   const modalHead = document.createElement('div');
   modalHead.setAttribute('class', 'modal-head');
@@ -182,6 +183,7 @@ function fillModal(id) {
     const techText = document.createTextNode(item);
     techElement.appendChild(techText);
     techButtons.appendChild(techElement);
+    techElement.setAttribute('class', 'simple-button');
     modalHead.appendChild(techButtons);
   });
   //  mainElement, a div for image + description + links
@@ -190,7 +192,7 @@ function fillModal(id) {
   dynamicModal.appendChild(mainElement);
   //  Modal Image
   const modalImageElement = document.createElement('img');
-  modalImageElement.setAttribute('src', 'Set modal image path here');
+  modalImageElement.setAttribute('src', 'media/modal-image-big.png');
   mainElement.appendChild(modalImageElement);
   //  bodyElement creates a div for description and links
   const bodyElement = document.createElement('div');
@@ -235,31 +237,23 @@ function fillModal(id) {
   dynamicModal.appendChild(closeButton);
 }
 
-function clearModal(id) {
-  const idElement = document.getElementById(id);
-  while (idElement.firstChild) {
-    idElement.removeChild(idElement.firstChild);
-  }
-}
-
-function showModal(id) {
-  clearModal(dynamicModal.id);
-  fillModal(id);
-  toggleModal('modal-container');
+function showModal(Id) {
+  fillModal(Id);
+  toggleModal('modal-section');
 }
 
 // eventListener for dynamic cards generator
-dinamicProjects.addEventListener('click', (event) => {
+dynamicCards.addEventListener('click', (event) => {
   const elementId = event.target.id;
-  // But only alert for elements that have an buttons class
-  if (event.target.classList.contains('buttons')) {
+  // But only alert for elements that have a .project-button class
+  if (event.target.classList.contains('project-button')) {
     showModal(elementId);
   }
 });
 
 window.addEventListener('click', (event) => {
-  const modal = document.querySelector('#modal-container');
-  if (event.target === modal || event.target.className === 'close-buttom') {
-    modal.classList.remove('showUp');
+  const modal = document.querySelector('#modal-section');
+  if (event.target === modal || event.target.className === 'close-button') {
+    modal.classList.remove('active');
   }
 });

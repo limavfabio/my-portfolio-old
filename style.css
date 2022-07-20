@@ -779,6 +779,7 @@ form.send-message button:focus-visible {
     display: flex;
     gap: 20px;
   }
+
   .modal-container img {
     max-width: 400px;
   }
