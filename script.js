@@ -224,12 +224,18 @@ function createModal(Id) {
   const linkLiveElement = document.createElement('li');
   linkLiveElement.setAttribute('class', 'project-button');
   const linkLiveElementText = document.createTextNode('See Live');
+  const liveElementIcon = document.createElement('img');
+  liveElementIcon.setAttribute('src', 'media/Icons/see-live-icon.svg');
   linkLiveElement.appendChild(linkLiveElementText);
+  linkLiveElement.appendChild(liveElementIcon);
   linksElement.appendChild(linkLiveElement);
   const linkSourceElement = document.createElement('li');
   linkSourceElement.setAttribute('class', 'project-button');
   const linkSourceElementText = document.createTextNode('See Source');
+  const sourceElementIcon = document.createElement('img');
+  sourceElementIcon.setAttribute('src', 'media/Icons/source-icon-github.svg');
   linkSourceElement.appendChild(linkSourceElementText);
+  linkSourceElement.appendChild(sourceElementIcon);
   linksElement.appendChild(linkSourceElement);
   // Append modal-section to body
   const body = document.querySelector('body');
