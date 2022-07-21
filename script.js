@@ -238,3 +238,46 @@ document.querySelector('label').addEventListener('click', () => {
   createModal();
   closeModal();
 });
+
+
+// ------------------- form validator
+
+// form submit button variable
+const formSubmit = document.querySelector('form button');
+
+// form variable
+const form = document.querySelector('form');
+
+// variable for the email input value
+const formEmail = document.querySelector('#mail');
+
+// Check text if it's lowercase helper function
+function checkLowerCase(text){
+  if (text === text.toLowerCase()) {
+    return true;
+  }
+  return false;
+};
+
+// Validate email function
+function validateEmail(email) {
+  if (!checkLowerCase(emailValue)) {
+    setError(email, 'Use lower case');
+  } else {
+    form.submit();
+  }
+}
+
+// eventListener for submit buttom on formulary
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+  validateEmail();
+});
+
+// Error presenting function
+function showError() {
+  const error = document.createElement('p');
+  error.setAttribute('class', 'error');
+  error.innerText = 'Please enter all lowercase email address';
+  querySelector("form").appendChild(error);
+}
