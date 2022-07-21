@@ -22,8 +22,6 @@ const projects = [
     title: 'Multi-post Stories',
     description:
       "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
-    imageBig: 'link to the image',
-    imageSmall: 'link to the image',
     technologies: ['HTML', 'CSS', 'Bootstrap'],
     linkLive: 'https://www.limavfabio.github.io',
     linkSource: 'https://github.com/limavfabio/my-portfolio',
@@ -35,8 +33,6 @@ const projects = [
     title: 'Project number 01 test test',
     description:
       "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-    imageBig: 'link to the image',
-    imageSmall: 'link to the image',
     technologies: ['HTML', 'CSS', 'Ruby'],
     linkLive: 'https://www.limavfabio.github.io',
     linkSource: 'https://github.com/limavfabio/my-portfolio',
@@ -48,34 +44,28 @@ const projects = [
     title: 'Profesional Art Printing Data',
     description:
       "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-    imageBig: 'link to the image',
-    imageSmall: 'link to the image',
     technologies: ['HTML', 'CSS', 'Ruby'],
     linkLive: 'https://www.limavfabio.github.io',
     linkSource: 'https://github.com/limavfabio/my-portfolio',
     modalDescription:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+      "This is the second project modal, you can notice that the website is generating each modal based on the project Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
   },
   {
     projectId: 3,
     title: 'Profesional Art Printing Data',
     description:
       "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-    imageBig: 'link to the image',
-    imageSmall: 'link to the image',
     technologies: ['HTML', 'CSS', 'Ruby'],
     linkLive: 'https://www.limavfabio.github.io',
     linkSource: 'https://github.com/limavfabio/my-portfolio',
     modalDescription:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+      "his is the third project modal, you can notice that the website is generating each modal based on the projectLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
   },
   {
     projectId: 4,
     title: 'Profesional Art n4 Printing Data',
     description:
       "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-    imageBig: 'link to the image',
-    imageSmall: 'link to the image',
     technologies: ['HTML', 'CSS', 'Ruby'],
     linkLive: 'https://www.limavfabio.github.io',
     linkSource: 'https://github.com/limavfabio/my-portfolio',
@@ -87,8 +77,6 @@ const projects = [
     title: 'Profesional Art Printing Data',
     description:
       "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-    imageBig: 'link to the image',
-    imageSmall: 'link to the image',
     technologies: ['HTML', 'CSS', 'Ruby'],
     linkLive: 'https://www.limavfabio.github.io',
     linkSource: 'https://github.com/limavfabio/my-portfolio',
@@ -100,8 +88,6 @@ const projects = [
     title: 'Profesional Art Printing Data',
     description:
       "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
-    imageBig: 'link to the image',
-    imageSmall: 'link to the image',
     technologies: ['HTML', 'CSS', 'Ruby'],
     linkLive: 'https://www.limavfabio.github.io',
     linkSource: 'https://github.com/limavfabio/my-portfolio',
