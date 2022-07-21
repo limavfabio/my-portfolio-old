@@ -17,13 +17,6 @@ document.querySelectorAll('#offcanvas a').forEach((n) =>
   })
 );
 
-//  -------------------Modal I/O function
-
-function toggleModal(Id) {
-  const modal = document.getElementById(Id);
-  modal.classList.add('active');
-}
-
 // --------------Arrays of project cards objects
 
 const projects = [
@@ -164,19 +157,35 @@ for (let index = 1; index < projects.length; index += 1) {
 }
 
 // ----------------Generate Modals
-function fillModal(Id) {
+function createModal(Id) {
   const element = projects[Id];
-  //  modalHead, a div for the title and techButtons
+  //  Create modal-section, a div enclosing the modal
+  const modalSection = document.createElement('div');
+  modalSection.setAttribute('class', 'modal-section');
+  modalSection.setAttribute('id', `modal-section`);
+  //  Create #dynamic-modal.modal-container, the modal white background
+  const modalContainer = document.createElement('div');
+  modalContainer.setAttribute('class', 'modal-container');
+  modalContainer.setAttribute('id', 'dynamic-modal');
+  modalSection.appendChild(modalContainer);
+  // Create .modal-head, a div enclosing the close button, the title and the techbuttons
   const modalHead = document.createElement('div');
   modalHead.setAttribute('class', 'modal-head');
-  dynamicModal.appendChild(modalHead);
+  modalContainer.appendChild(modalHead);
+  // Create .buttonX, the close button
+  const buttonX = document.createElement('button');
+  buttonX.setAttribute('class', 'buttonX');
+  buttonX.innerHTML('X');
+  modalHead.appendChild(buttonX);
+  // Create h2, the title
   const modalTitle = document.createElement('h2');
-  const titleText = document.createTextNode(element.title);
-  modalTitle.appendChild(titleText);
+  modalTitle.innerHTML(element.title);
   modalHead.appendChild(modalTitle);
-  //  modalHead techButtons
-  const techButtons = document.createElement('ul');
-  techButtons.setAttribute('class', 'tech-buttons');
+  // Create ul.tech-buttons
+  const modalTechButtons = document.createElement('ul');
+  modalTechButtons.setAttribute('class', 'tech-buttons');
+  modalHead.appendChild(modalTechButtons);
+  // For each techButton, generate a li element and a text node and append it to ul.tech-buttons
   const techs = element.technologies;
   techs.forEach((item) => {
     const techElement = document.createElement('li');
@@ -184,61 +193,48 @@ function fillModal(Id) {
     techElement.appendChild(techText);
     techButtons.appendChild(techElement);
     techElement.setAttribute('class', 'simple-button');
-    modalHead.appendChild(techButtons);
+    modalTechButtons.appendChild(techElement);
   });
-  //  mainElement, a div for image + description + links
+
+  //  mainElement, a div for image + .modal-p-btns, a div enclosing the description and the buttons
   const mainElement = document.createElement('div');
-  mainElement.setAttribute('class', 'modal-main-element');
+  mainElement.setAttribute('class', 'main-element');
   dynamicModal.appendChild(mainElement);
   //  Modal Image
   const modalImageElement = document.createElement('img');
   modalImageElement.setAttribute('src', 'media/modal-image-big.png');
   mainElement.appendChild(modalImageElement);
-  //  bodyElement creates a div for description and links
-  const bodyElement = document.createElement('div');
-  bodyElement.setAttribute('class', 'body-element');
-  mainElement.appendChild(bodyElement);
+  //  .modal-p-btns creates a div for description and links
+  const modalPBtns = document.createElement('div');
+  modalPBtns.setAttribute('class', 'modal-p-btns');
+  mainElement.appendChild(modalPBtns);
   //  Modal description
   const modalDescription = document.createElement('p');
-  const modalDescriptionText = document.createTextNode(
-    element.modalDescription
-  );
-  modalDescription.appendChild(modalDescriptionText);
-  bodyElement.appendChild(modalDescription);
-  //  linksElement creates a div for links
-  const linksElement = document.createElement('div');
-  linksElement.setAttribute('class', 'links-element');
-  bodyElement.appendChild(linksElement);
+  modalDescription.innerHTML(element.modalDescription);
+  modalPBtns.appendChild(modalDescription);
+  //  linksElement creates a ul for links
+  const linksElement = document.createElement('ul');
+  modalPBtns.appendChild(linksElement);
   //  Generate links
-  const linkLiveElement = document.createElement('a');
-  const linkLiveText = document.createTextNode('See Live');
-  const linkLiveIcon = document.createElement('div');
-  linkLiveIcon.setAttribute('class', 'image-icon1');
-  linkLiveElement.setAttribute('href', element.linkLive);
-  linkLiveElement.setAttribute('class', 'link-live');
-  const linkSourceIcon = document.createElement('div');
-  linkSourceIcon.setAttribute('class', 'image-icon2');
-  const linkSourceElement = document.createElement('a');
-  const linkSourceText = document.createTextNode('See Source');
-  linkSourceElement.setAttribute('href', element.linkSource);
-  linkSourceElement.setAttribute('class', 'link-source-element');
-  linkLiveElement.appendChild(linkLiveText);
-  linkSourceElement.appendChild(linkSourceText);
-  linkLiveElement.appendChild(linkLiveIcon);
-  linkSourceElement.appendChild(linkSourceIcon);
+  const linkLiveElement = document.createElement('li');
+  linkLiveElement.setAttribute('class', 'project-button');
+  linkLiveElement.innerHTML('See Live');
   linksElement.appendChild(linkLiveElement);
+  const linkSourceElement = document.createElement('li');
+  linkSourceElement.setAttribute('class', 'project-button');
+  linkSourceElement.innerHTML('See Source');
   linksElement.appendChild(linkSourceElement);
-  //  Close button for modal
-  const closeButton = document.createElement('button');
-  const closeButtonX = document.createTextNode('X');
-  closeButton.setAttribute('id', 'x-button');
-  closeButton.setAttribute('class', 'close-button');
-  closeButton.appendChild(closeButtonX);
-  dynamicModal.appendChild(closeButton);
+}
+
+//  -------------------Modal Open/Close function
+
+function toggleModal(Id) {
+  const modal = document.getElementById(Id);
+  modal.classList.add('active');
 }
 
 function showModal(Id) {
-  fillModal(Id);
+  createModal(Id);
   toggleModal('modal-section');
 }
 
