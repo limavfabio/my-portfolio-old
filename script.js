@@ -9,10 +9,12 @@ toggleButton.addEventListener('click', () => {
   toggleButton.classList.toggle('active');
 });
 
-document.querySelectorAll('#offcanvas a').forEach((n) => n.addEventListener('click', () => {
-  nav.classList.remove('active');
-  toggleButton.classList.remove('active');
-}));
+document.querySelectorAll('#offcanvas a').forEach((n) =>
+  n.addEventListener('click', () => {
+    nav.classList.remove('active');
+    toggleButton.classList.remove('active');
+  })
+);
 
 // --------------Arrays of project cards objects
 
@@ -32,7 +34,7 @@ const projects = [
   },
   {
     projectId: 1,
-    title: 'Profesional Art Printing Data',
+    title: 'Project number 01 test test',
     description:
       "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
     imageBig: 'link to the image',
@@ -41,7 +43,7 @@ const projects = [
     linkLive: 'https://www.limavfabio.github.io',
     linkSource: 'https://github.com/limavfabio/my-portfolio',
     modalDescription:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+      "Modal description of project niumber 01 and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
   },
   {
     projectId: 2,
@@ -71,7 +73,7 @@ const projects = [
   },
   {
     projectId: 4,
-    title: 'Profesional Art Printing Data',
+    title: 'Profesional Art n4 Printing Data',
     description:
       "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard",
     imageBig: 'link to the image',
@@ -111,8 +113,8 @@ const projects = [
 ];
 
 // ----------------generate project cards
-for (let index = 1; index < projects.length; index += 1) {
-  const project = projects[index];
+for (let i = 1; i < projects.length; i += 1) {
+  const project = projects[i];
   //  Generate secondary-card main div
   const secondaryCard = document.createElement('div');
   secondaryCard.setAttribute('class', 'secondary-card');
@@ -147,6 +149,7 @@ for (let index = 1; index < projects.length; index += 1) {
   const btnText = document.createTextNode('See project');
   projectButton.setAttribute('class', 'project-button');
   projectButton.setAttribute('Id', project.projectId);
+  projectButton.setAttribute('onclick', `createModal(${project.projectId})`);
   projectButton.appendChild(btnText);
   secondaryCard.appendChild(projectButton);
 
@@ -212,7 +215,7 @@ function createModal(Id) {
   //  Modal description
   const modalDescription = document.createElement('p');
   const modalDescriptionText = document.createTextNode(
-    element.modalDescription,
+    element.modalDescription
   );
   modalDescription.appendChild(modalDescriptionText);
   modalPBtns.appendChild(modalDescription);

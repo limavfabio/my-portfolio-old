@@ -40,18 +40,8 @@ body {
 }
 
 header {
-  font-family:
-    system-ui,
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    Oxygen,
-    Ubuntu,
-    Cantarell,
-    'Open Sans',
-    'Helvetica Neue',
-    sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 18px;
   background-color: #3c3a39;
   position: fixed;
@@ -185,18 +175,8 @@ nav .logo {
 }
 
 .hero .title {
-  font-family:
-    system-ui,
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    Oxygen,
-    Ubuntu,
-    Cantarell,
-    'Open Sans',
-    'Helvetica Neue',
-    sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   color: #fff5e1;
   line-height: 32px;
   margin: 10px 0;
@@ -719,7 +699,7 @@ form.send-message button:focus-visible {
 
 .modal-container {
   width: 80%;
-  height: fit-content;
+  height: min-content;
   background: #fff;
   border-radius: 10px;
   padding: 20px 24px;
