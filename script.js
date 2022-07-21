@@ -9,12 +9,10 @@ toggleButton.addEventListener('click', () => {
   toggleButton.classList.toggle('active');
 });
 
-document.querySelectorAll('#offcanvas a').forEach((n) =>
-  n.addEventListener('click', () => {
-    nav.classList.remove('active');
-    toggleButton.classList.remove('active');
-  })
-);
+document.querySelectorAll('#offcanvas a').forEach((n) => n.addEventListener('click', () => {
+  nav.classList.remove('active');
+  toggleButton.classList.remove('active');
+}));
 
 // --------------Arrays of project cards objects
 
@@ -215,7 +213,7 @@ function createModal(Id) {
   //  Modal description
   const modalDescription = document.createElement('p');
   const modalDescriptionText = document.createTextNode(
-    element.modalDescription
+    element.modalDescription,
   );
   modalDescription.appendChild(modalDescriptionText);
   modalPBtns.appendChild(modalDescription);
