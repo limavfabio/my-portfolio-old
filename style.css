@@ -40,7 +40,18 @@ body {
 }
 
 header {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    'Open Sans',
+    'Helvetica Neue',
+    sans-serif;
   font-size: 18px;
   background-color: #3c3a39;
   position: fixed;
@@ -174,7 +185,18 @@ nav .logo {
 }
 
 .hero .title {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    'Open Sans',
+    'Helvetica Neue',
+    sans-serif;
   color: #fff5e1;
   line-height: 32px;
   margin: 10px 0;
@@ -244,15 +266,15 @@ nav .logo {
   color: #1c1a19;
 }
 
-.recent-works .img-card-1 {
+.featured-card {
   color: #091e42;
 }
 
-.recent-works .img-card-1 img {
+.featured-card img {
   width: 100%;
 }
 
-.recent-works .img-card-1 .project-title {
+.featured-card .project-title {
   font-family: 'Crete Round', serif;
   font-size: 32px;
   font-weight: 400;
@@ -261,16 +283,7 @@ nav .logo {
   margin: 10px auto;
 }
 
-.about-me .description {
-  font-family: 'Inter', sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  text-align: left;
-  color: #fff;
-  margin: 12px 24px 24px;
-}
-
-.recent-works .img-card-1 .description {
+.featured-card .description {
   font-family: 'Inter', sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -280,7 +293,7 @@ nav .logo {
   max-width: 90%;
 }
 
-.recent-works .img-card-1 .buttons {
+.featured-card .tech-buttons {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
@@ -290,7 +303,7 @@ h4 {
   margin: 0;
 }
 
-.recent-works .img-card-1 .simple-button {
+.featured-card .simple-button {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -303,7 +316,7 @@ h4 {
   line-height: 20px;
 }
 
-.recent-works .img-card-1 .project-button {
+.featured-card .project-button {
   padding: 12px 12px;
   background-color: #943e00;
   font-family: 'Inter', sans-serif;
@@ -316,10 +329,11 @@ h4 {
   border: 1px solid #943e00;
 }
 
-.recent-works .background-card-1 .project-button {
+.secondary-card .project-button {
   padding: 12px 12px;
   background-color: #943e00;
   font-family: 'Inter', sans-serif;
+  margin-top: auto;
   font-size: 17px;
   font-weight: 700;
   line-height: 24px;
@@ -328,7 +342,7 @@ h4 {
   border: 1px solid #943e00;
 }
 
-.recent-works .img-card-1 .project-button:hover {
+.featured-card .project-button:hover {
   padding: 12px 12px;
   font-family: 'Inter', sans-serif;
   background-color: #fff5e1;
@@ -341,7 +355,7 @@ h4 {
   border: 1px solid #943e00;
 }
 
-.recent-works .background-card-1 {
+.secondary-card {
   background-image: url(media/background-card-2);
   margin-top: 24px;
   background-color: #000;
@@ -349,7 +363,7 @@ h4 {
   flex-direction: column;
 }
 
-.recent-works .background-card-1 .project-title {
+.secondary-card .project-title {
   font-family: 'Crete Round', serif;
   font-size: 32px;
   font-weight: 400;
@@ -359,7 +373,7 @@ h4 {
   margin: 60px 16px 20px;
 }
 
-.recent-works .background-card-1 .description {
+.secondary-card .description {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -369,14 +383,14 @@ h4 {
   margin: 10px 16px 20px;
 }
 
-.recent-works .background-card-1 .buttons {
+.secondary-card .tech-buttons {
   display: flex;
   gap: 12px;
   margin: 10px auto 20px 16px;
   color: #fff;
 }
 
-.recent-works .background-card-1 .simple-button {
+.secondary-card .simple-button {
   padding: 10px 12px;
   background: rgba(255, 255, 255, 0.24);
   font-family: 'Inter', sans-serif;
@@ -384,7 +398,7 @@ h4 {
   font-size: 15px;
 }
 
-.recent-works .background-card-1 .project-button:hover {
+.secondary-card .project-button:hover {
   padding: 12px 12px;
   background-color: #fff5e1;
   font-family: 'Inter', sans-serif;
@@ -416,7 +430,7 @@ h4 {
     gap: 24px;
   }
 
-  .recent-works .img-card-1 {
+  .recent-works .featured-card {
     grid-column: 1/4;
     display: flex;
     gap: 24px;
@@ -427,11 +441,11 @@ h4 {
     scale: 1.05;
   }
 
-  .img-card-1 .main-image {
+  .featured-card .main-image {
     flex-grow: 1;
   }
 
-  .img-card-1 .main-body {
+  .featured-card .main-body {
     flex-shrink: 3;
     min-width: 303px;
   }
@@ -455,6 +469,15 @@ h4 {
   color: #ff6b00;
   padding-top: 120px;
   margin: auto 24px;
+}
+
+.about-me .description {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: left;
+  color: #fff;
+  margin: 12px 24px 24px;
 }
 
 .about-me .button {
@@ -676,4 +699,153 @@ form.send-message button:focus-visible {
   justify-content: center;
   align-items: center;
   column-gap: 10px;
+}
+
+/* ------------------ Modals Styles */
+.modal-section {
+  overflow: scroll;
+  display: none;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  justify-content: center;
+}
+
+.modal-section ul img {
+  height: 25px;
+  top: 5px;
+  align-self: flex-end;
+  position: relative;
+}
+
+.modal-section.active {
+  display: flex;
+}
+
+.modal-container {
+  margin: 30px auto;
+  width: 80%;
+  height: min-content;
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.modal-container h2 {
+  margin-top: -20px;
+  color: #091e42;
+  font-family: 'Crete Round', serif;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 44px;
+  text-align: left;
+  margin-right: 35px;
+}
+
+.modal-container ul.tech-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  max-width: max-content;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.modal-container .simple-button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 12px;
+  border: #8993a4 solid 1px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.modal-container .main-element > img {
+  width: 100%;
+  min-width: 50%;
+  margin-top: 20px;
+  max-width: 400px;
+}
+
+.modal-container p {
+  font-family: 'Inter', sans-serif;
+}
+
+.modal-container .modal-p-btns ul {
+  display: flex;
+  gap: 15px;
+}
+
+.modal-container .modal-p-btns .project-button {
+  padding: 12px 12px;
+  background-color: #943e00;
+  font-family: 'Inter', sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+  min-width: max-content;
+  letter-spacing: 0.03em;
+  color: #fff;
+  margin-top: 12px;
+  border: 1px solid #943e00;
+}
+
+.modal-head {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-container .buttonX {
+  align-self: flex-end;
+  font-size: larger;
+  font-family: 'Inter', sans-serif;
+  background-color: #ffd2b3;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .modal-container .main-element {
+    display: flex;
+    gap: 20px;
+  }
+
+  .modal-section.active {
+    align-items: center;
+  }
+
+  .modal-container .modal-p-btns {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .modal-container .modal-p-btns ul {
+    margin-top: auto;
+  }
+
+  .modal-container .main-element > img {
+    max-width: 400px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .modal-container .main-element {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .modal-container .modal-p-btns .project-button {
+    width: 100%;
+  }
 }
