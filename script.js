@@ -238,3 +238,9 @@ function createModal(Id) {
   const body = document.querySelector('body');
   body.appendChild(modalSection);
 }
+//  -------------------Modal Open/Close function
+
+function closeModal() {
+  const modal = document.getElementById('modal-section');
+  modal.remove();
+}
