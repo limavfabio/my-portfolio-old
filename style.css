@@ -40,8 +40,18 @@ body {
 }
 
 header {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    'Open Sans',
+    'Helvetica Neue',
+    sans-serif;
   font-size: 18px;
   background-color: #3c3a39;
   position: fixed;
@@ -175,8 +185,18 @@ nav .logo {
 }
 
 .hero .title {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    'Open Sans',
+    'Helvetica Neue',
+    sans-serif;
   color: #fff5e1;
   line-height: 32px;
   margin: 10px 0;
@@ -246,15 +266,15 @@ nav .logo {
   color: #1c1a19;
 }
 
-.recent-works .featured-card {
+.featured-card {
   color: #091e42;
 }
 
-.recent-works .featured-card img {
+.featured-card img {
   width: 100%;
 }
 
-.recent-works .featured-card .project-title {
+.featured-card .project-title {
   font-family: 'Crete Round', serif;
   font-size: 32px;
   font-weight: 400;
@@ -263,7 +283,7 @@ nav .logo {
   margin: 10px auto;
 }
 
-.recent-works .featured-card .description {
+.featured-card .description {
   font-family: 'Inter', sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -273,7 +293,7 @@ nav .logo {
   max-width: 90%;
 }
 
-.recent-works .featured-card .tech-buttons {
+.featured-card .tech-buttons {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
@@ -283,7 +303,7 @@ h4 {
   margin: 0;
 }
 
-.recent-works .featured-card .simple-button {
+.featured-card .simple-button {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -296,7 +316,7 @@ h4 {
   line-height: 20px;
 }
 
-.recent-works .featured-card .project-button {
+.featured-card .project-button {
   padding: 12px 12px;
   background-color: #943e00;
   font-family: 'Inter', sans-serif;
@@ -309,7 +329,7 @@ h4 {
   border: 1px solid #943e00;
 }
 
-.recent-works .secondary-card .project-button {
+.secondary-card .project-button {
   padding: 12px 12px;
   background-color: #943e00;
   font-family: 'Inter', sans-serif;
@@ -321,7 +341,7 @@ h4 {
   border: 1px solid #943e00;
 }
 
-.recent-works .featured-card .project-button:hover {
+.featured-card .project-button:hover {
   padding: 12px 12px;
   font-family: 'Inter', sans-serif;
   background-color: #fff5e1;
@@ -334,7 +354,7 @@ h4 {
   border: 1px solid #943e00;
 }
 
-.recent-works .secondary-card {
+.secondary-card {
   background-image: url(media/background-card-2);
   margin-top: 24px;
   background-color: #000;
@@ -342,7 +362,7 @@ h4 {
   flex-direction: column;
 }
 
-.recent-works .secondary-card .project-title {
+.secondary-card .project-title {
   font-family: 'Crete Round', serif;
   font-size: 32px;
   font-weight: 400;
@@ -352,7 +372,7 @@ h4 {
   margin: 60px 16px 20px;
 }
 
-.recent-works .secondary-card .description {
+.secondary-card .description {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -362,14 +382,14 @@ h4 {
   margin: 10px 16px 20px;
 }
 
-.recent-works .secondary-card .tech-buttons {
+.secondary-card .tech-buttons {
   display: flex;
   gap: 12px;
   margin: 10px auto 20px 16px;
   color: #fff;
 }
 
-.recent-works .secondary-card .simple-button {
+.secondary-card .simple-button {
   padding: 10px 12px;
   background: rgba(255, 255, 255, 0.24);
   font-family: 'Inter', sans-serif;
@@ -377,7 +397,7 @@ h4 {
   font-size: 15px;
 }
 
-.recent-works .secondary-card .project-button:hover {
+.secondary-card .project-button:hover {
   padding: 12px 12px;
   background-color: #fff5e1;
   font-family: 'Inter', sans-serif;
@@ -750,7 +770,7 @@ form.send-message button:focus-visible {
   font-family: 'Inter', sans-serif;
 }
 
-.modal-container .project-button {
+#dynamic-modal.modal-container .project-button {
   padding: 12px 12px;
   background-color: #943e00;
   font-family: 'Inter', sans-serif;
