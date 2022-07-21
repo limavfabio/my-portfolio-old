@@ -246,15 +246,15 @@ nav .logo {
   color: #1c1a19;
 }
 
-.recent-works .img-card-1 {
+.recent-works .featured-card {
   color: #091e42;
 }
 
-.recent-works .img-card-1 img {
+.recent-works .featured-card img {
   width: 100%;
 }
 
-.recent-works .img-card-1 .project-title {
+.recent-works .featured-card .project-title {
   font-family: 'Crete Round', serif;
   font-size: 32px;
   font-weight: 400;
@@ -263,7 +263,7 @@ nav .logo {
   margin: 10px auto;
 }
 
-.recent-works .img-card-1 .description {
+.recent-works .featured-card .description {
   font-family: 'Inter', sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -273,7 +273,7 @@ nav .logo {
   max-width: 90%;
 }
 
-.recent-works .img-card-1 .tech-buttons {
+.recent-works .featured-card .tech-buttons {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
@@ -283,7 +283,7 @@ h4 {
   margin: 0;
 }
 
-.recent-works .img-card-1 .simple-button {
+.recent-works .featured-card .simple-button {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -296,7 +296,7 @@ h4 {
   line-height: 20px;
 }
 
-.recent-works .img-card-1 .project-button {
+.recent-works .featured-card .project-button {
   padding: 12px 12px;
   background-color: #943e00;
   font-family: 'Inter', sans-serif;
@@ -321,7 +321,7 @@ h4 {
   border: 1px solid #943e00;
 }
 
-.recent-works .img-card-1 .project-button:hover {
+.recent-works .featured-card .project-button:hover {
   padding: 12px 12px;
   font-family: 'Inter', sans-serif;
   background-color: #fff5e1;
@@ -409,7 +409,7 @@ h4 {
     gap: 24px;
   }
 
-  .recent-works .img-card-1 {
+  .recent-works .featured-card {
     grid-column: 1/4;
     display: flex;
     gap: 24px;
@@ -420,11 +420,11 @@ h4 {
     scale: 1.05;
   }
 
-  .img-card-1 .main-image {
+  .featured-card .main-image {
     flex-grow: 1;
   }
 
-  .img-card-1 .main-body {
+  .featured-card .main-body {
     flex-shrink: 3;
     min-width: 303px;
   }
@@ -706,7 +706,6 @@ form.send-message button:focus-visible {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
 }
 
 .modal-container h2 {
@@ -717,6 +716,7 @@ form.send-message button:focus-visible {
   font-weight: 400;
   line-height: 44px;
   text-align: left;
+  margin-right: 35px;
 }
 
 .modal-container ul {
@@ -772,6 +772,9 @@ form.send-message button:focus-visible {
   align-self: flex-end;
   font-size: larger;
   font-family: 'Inter', sans-serif;
+  background-color: #ffd2b3;
+  border-radius: 5px;
+  padding: 5px 10px;
 }
 
 @media screen and (min-width: 768px) {

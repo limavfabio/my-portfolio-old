@@ -178,6 +178,7 @@ function createModal(Id) {
   const buttonX = document.createElement('button');
   const buttonXText = document.createTextNode('X');
   buttonX.setAttribute('class', 'buttonX');
+  buttonX.setAttribute('onclick', 'closeModal()');
   buttonX.appendChild(buttonXText);
   modalHead.appendChild(buttonX);
   // Create h2, the title
@@ -233,11 +234,7 @@ function createModal(Id) {
   linkSourceElementText = document.createTextNode('See Source');
   linkSourceElement.appendChild(linkSourceElementText);
   linksElement.appendChild(linkSourceElement);
-}
-
-//  -------------------Modal Open/Close function
-
-function toggleModal(Id) {
-  const modal = document.getElementById(Id);
-  modal.classList.add('active');
+  // Append modal-section to body
+  const body = document.querySelector('body');
+  body.appendChild(modalSection);
 }
