@@ -9,12 +9,10 @@ toggleButton.addEventListener('click', () => {
   toggleButton.classList.toggle('active');
 });
 
-document.querySelectorAll('#offcanvas a').forEach((n) =>
-  n.addEventListener('click', () => {
-    nav.classList.remove('active');
-    toggleButton.classList.remove('active');
-  })
-);
+document.querySelectorAll('#offcanvas a').forEach((n) => n.addEventListener('click', () => {
+  nav.classList.remove('active');
+  toggleButton.classList.remove('active');
+}));
 
 // --------------Arrays of project cards objects
 
@@ -134,7 +132,8 @@ for (let index = 1; index < projects.length; index += 1) {
   const techButtons = document.createElement('ul');
   techButtons.setAttribute('class', 'tech-buttons');
   const techs = project.technologies;
-  // For each techButton, generate a li element and a text node and append it to each parent accordingly
+  // For each techButton, generate a li element and a
+  // text node and append it to each parent accordingly
   techs.forEach((item) => {
     const techElement = document.createElement('li');
     const techText = document.createTextNode(item);
@@ -155,16 +154,13 @@ for (let index = 1; index < projects.length; index += 1) {
   dynamicCards.appendChild(secondaryCard);
 }
 
-// Global variables for the modal
-const closeButton = document.querySelector('.close-button');
-
 // ----------------Generate Modals
 function createModal(Id) {
   const element = projects[Id];
   //  Create modal-section, a div enclosing the modal
   const modalSection = document.createElement('div');
   modalSection.setAttribute('class', 'modal-section active');
-  modalSection.setAttribute('id', `modal-section`);
+  modalSection.setAttribute('id', 'modal-section');
   //  Create #dynamic-modal.modal-container, the modal white background
   const modalContainer = document.createElement('div');
   modalContainer.setAttribute('class', 'modal-container');
@@ -216,7 +212,7 @@ function createModal(Id) {
   //  Modal description
   const modalDescription = document.createElement('p');
   const modalDescriptionText = document.createTextNode(
-    element.modalDescription
+    element.modalDescription,
   );
   modalDescription.appendChild(modalDescriptionText);
   modalPBtns.appendChild(modalDescription);
@@ -226,12 +222,12 @@ function createModal(Id) {
   //  Generate links
   const linkLiveElement = document.createElement('li');
   linkLiveElement.setAttribute('class', 'project-button');
-  linkLiveElementText = document.createTextNode('See Live');
+  const linkLiveElementText = document.createTextNode('See Live');
   linkLiveElement.appendChild(linkLiveElementText);
   linksElement.appendChild(linkLiveElement);
   const linkSourceElement = document.createElement('li');
   linkSourceElement.setAttribute('class', 'project-button');
-  linkSourceElementText = document.createTextNode('See Source');
+  const linkSourceElementText = document.createTextNode('See Source');
   linkSourceElement.appendChild(linkSourceElementText);
   linksElement.appendChild(linkSourceElement);
   // Append modal-section to body
@@ -244,3 +240,8 @@ function closeModal() {
   const modal = document.getElementById('modal-section');
   modal.remove();
 }
+
+document.querySelector('label').addEventListener('click', () => {
+  createModal();
+  closeModal();
+});
