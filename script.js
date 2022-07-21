@@ -26,7 +26,7 @@ const projects = [
     linkLive: 'https://www.limavfabio.github.io',
     linkSource: 'https://github.com/limavfabio/my-portfolio',
     modalDescription:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+      "Lorem Ipsum is simply dummy tince the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
   },
   {
     projectId: 1,
@@ -37,7 +37,7 @@ const projects = [
     linkLive: 'https://www.limavfabio.github.io',
     linkSource: 'https://github.com/limavfabio/my-portfolio',
     modalDescription:
-      "Modal description of project niumber 01 and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+      "Modal description of project niumber 01 ad not only five centuries, but also the leap into electronic typesetting, remaining essent",
   },
   {
     projectId: 2,
@@ -70,7 +70,7 @@ const projects = [
     linkLive: 'https://www.limavfabio.github.io',
     linkSource: 'https://github.com/limavfabio/my-portfolio',
     modalDescription:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industr00s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
   },
   {
     projectId: 5,
