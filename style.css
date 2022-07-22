@@ -853,4 +853,6 @@ form.send-message button:focus-visible {
 p.error {
   color: red;
   display: none;
+  font-size: large;
+  font-family: 'Inter', sans-serif;
 }
