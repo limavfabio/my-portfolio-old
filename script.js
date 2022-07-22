@@ -292,8 +292,8 @@ document.addEventListener('DOMContentLoaded', () => {
     messageForm.value = formObject.message;
   }
 });
-  firstName.onchange = handleChange;
-  lastName.onchange = handleChange;
-  fullName.onchange = handleChange;
-  FormEmail.onchange = handleChange;
-  messageForm.onchange = handleChange;
+firstName.onchange = handleChange;
+lastName.onchange = handleChange;
+fullName.onchange = handleChange;
+FormEmail.onchange = handleChange;
+messageForm.onchange = handleChange;
