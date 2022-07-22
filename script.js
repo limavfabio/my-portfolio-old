@@ -263,3 +263,38 @@ form.addEventListener('submit', (event) => {
     error.innerHTML = '*Please type email adress in lowercase';
   }
 });
+
+
+// ------------------- Form Local Storage
+
+const firstName = document.querySelector('#firstname');
+const lastName = document.querySelector('#lastname');
+const fullName = document.querySelector('#fullname');
+const FormEmail = document.querySelector('#mail');
+const messageForm = document.querySelector('#msg');
+function handleChange() {
+  const formData = {
+    firstName: firstName.value,
+    lastName: lastName.value,
+    fullName: fullName.value,
+    email: FormEmail.value,
+    message: messageForm.value,
+  };
+  localStorage.setItem('form', JSON.stringify(formData));
+}
+document.addEventListener('DOMContentLoaded', () => {
+  const formDataValue = localStorage.getItem('form');
+  if (formDataValue) {
+    const formObject = JSON.parse(formDataValue);
+    firstName.value = formObject.firstName;
+    lastName.value = formObject.lastName;
+    fullName.value = formObject.fullName;
+    FormEmail.value = formObject.email;
+    messageForm.value = formObject.message;
+  }
+});
+firstName.onchange = handleChange;
+lastName.onchange = handleChange;
+fullName.onchange = handleChange;
+FormEmail.onchange = handleChange;
+messageForm.onchange = handleChange;
