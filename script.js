@@ -264,7 +264,6 @@ form.addEventListener('submit', (event) => {
   }
 });
 
-
 // ------------------- Form Local Storage
 
 const firstName = document.querySelector('#firstname');
