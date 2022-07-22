@@ -242,42 +242,26 @@ document.querySelector('label').addEventListener('click', () => {
 
 // ------------------- form validator
 
-// form submit button variable
-const formSubmit = document.querySelector('form button');
-
-// form variable
 const form = document.querySelector('form');
-
-// variable for the email input value
-const formEmail = document.querySelector('#mail');
-
-// Check text if it's lowercase helper function
-function checkLowerCase(text){
-  if (text === text.toLowerCase()) {
-    return true;
+const error = document.querySelector('p.error');
+const email = document.querySelector ("#mail")
+function validateEmail() {
+  const emailValue = email.value.trim();
+  if (emailValue !== emailValue.toLowerCase()) {
+    return false;
   }
-  return false;
-};
-
-// Validate email function
-function validateEmail(email) {
-  if (!checkLowerCase(emailValue)) {
-    setError(email, 'Use lower case');
-  } else {
-    form.submit();
-  }
+  return true;
 }
-
-// eventListener for submit buttom on formulary
 form.addEventListener('submit', (event) => {
   event.preventDefault();
-  validateEmail();
+  const { email } = form.elements;
+  const isValidEmail = validateEmail(email);
+  if (isValidEmail) {
+    error.style.display = 'none';
+    form.submit();
+  } else {
+    error.style.display = 'block';
+    error.innerHTML = '*Please type email adress in lowercase';
+  }
 });
 
-// Error presenting function
-function showError() {
-  const error = document.createElement('p');
-  error.setAttribute('class', 'error');
-  error.innerText = 'Please enter all lowercase email address';
-  querySelector("form").appendChild(error);
-}
