@@ -264,13 +264,12 @@ form.addEventListener('submit', (event) => {
   }
 });
 
-
 // ------------------- Form Local Storage
 
-const firstName = document.querySelector('#firstname');
-const lastName = document.querySelector('#lastname');
-const fullName = document.querySelector('#fullname');
-const FormEmail = document.querySelector('#mail');
+const firstName = document.getElementById('firstname');
+const lastName = document.getElementById('lastname');
+const fullName = document.getElementById('fullname');
+const FormEmail = document.getElementById('mail');
 const messageForm = document.querySelector('#msg');
 function handleChange() {
   const formData = {
