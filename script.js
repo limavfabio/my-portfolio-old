@@ -239,12 +239,11 @@ document.querySelector('label').addEventListener('click', () => {
   closeModal();
 });
 
-
 // ------------------- form validator
 
 const form = document.querySelector('form');
 const error = document.querySelector('p.error');
-const email = document.querySelector ("#mail")
+const email = document.querySelector('#mail');
 function validateEmail() {
   const emailValue = email.value.trim();
   if (emailValue !== emailValue.toLowerCase()) {
@@ -264,4 +263,3 @@ form.addEventListener('submit', (event) => {
     error.innerHTML = '*Please type email adress in lowercase';
   }
 });
-
