@@ -238,3 +238,28 @@ document.querySelector('label').addEventListener('click', () => {
   createModal();
   closeModal();
 });
+
+// ------------------- form validator
+
+const form = document.querySelector('form');
+const error = document.querySelector('p.error');
+const email = document.querySelector('#mail');
+function validateEmail() {
+  const emailValue = email.value.trim();
+  if (emailValue !== emailValue.toLowerCase()) {
+    return false;
+  }
+  return true;
+}
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+  const { email } = form.elements;
+  const isValidEmail = validateEmail(email);
+  if (isValidEmail) {
+    error.style.display = 'none';
+    form.submit();
+  } else {
+    error.style.display = 'block';
+    error.innerHTML = '*Please type email adress in lowercase';
+  }
+});

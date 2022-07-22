@@ -849,3 +849,10 @@ form.send-message button:focus-visible {
     width: 100%;
   }
 }
+
+p.error {
+  color: red;
+  display: none;
+  font-size: large;
+  font-family: 'Inter', sans-serif;
+}
